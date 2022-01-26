@@ -7,10 +7,11 @@ export default function landingPage() {
     const [text, setText] = useState("")
     const [text2, setText2] = useState("")
     const [showLine, setShowLine] = useState(false)
+    const [opa, setOpa] = useState(0)
 
     const writeText = () => {
         const FullText1 = "Gabriel Santos"
-        const FullText2 = "Desenvolvedor"
+        const FullText2 = "Desenvolvedor Web"
 
         let i = 0
         const letters = setInterval(() => {
@@ -27,7 +28,11 @@ export default function landingPage() {
                 setText2(text2 += FullText2[i])
                 console.log(i)
                 i++
-                if (i == FullText2.length) clearInterval(letters2)
+                if (i == FullText2.length) {
+                    clearInterval(letters2)
+                    setOpa(1)
+                }
+                
             }, 100)
         }, 1400)
     }
@@ -49,10 +54,9 @@ export default function landingPage() {
                 <h3 className={styles.subtitle}>
                     {text2}
                     {showLine ? <span className={styles.line}>|</span> : false}
-
                 </h3>
             </div>
-            <h4 className={styles.desc}>Adoro tecnologia desde a minha infância, com a programação  encontrei a possibilidade de transformar essa paixão em trabalho, desde então estudo diariamente para criar aplicações cada vez melhores.</h4>
+            <h4 className={styles.desc} style={{opacity: opa}}>Adoro tecnologia desde a minha infância, com a programação  encontrei a possibilidade de transformar essa paixão em trabalho, desde então estudo diariamente para criar aplicações cada vez melhores. <br /> Abaixo você pode conferir um pouco mais do meu trabalho e informações de contato, Muito obrigado pela sua visita!</h4>
         </div>
     </div>
 }
