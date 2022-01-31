@@ -1,0 +1,105 @@
+.projects {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+    margin-top: 0px;
+}
+
+.projectsDescContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+
+.title {
+    color: #d8e6f4;
+    font-size: 38pt;
+    margin: auto;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #30344c;
+}
+
+.subTitle {
+    font-size: 19pt;
+    margin: 10px;
+    max-width: 55%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: auto;
+}
+
+.card {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b3d147;
+    border-radius: 10px;
+    transition: all .2s;
+    top: 0;
+    left: 5px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.card:hover {
+    height: 200px;
+}
+
+.cardTitle {
+    font-size: 50px;
+    margin-top: 25px;
+    user-select: none;
+}
+
+.cardDesc {
+    margin: 20px;
+    margin-top: -5px;
+    user-select: none;
+}
+
+.containerB {
+    margin: auto;
+    width: 430px;
+}
+
+@media (max-width:800px) {
+    .projects {
+        padding: 5px;
+    }
+    .projectsDescContainer {
+        flex-direction: column;
+    }
+
+    .subTitle {
+        max-width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        position: initial;
+        height: 240px;
+    }
+    .containerB {
+        width: 95%;
+    }
+}
