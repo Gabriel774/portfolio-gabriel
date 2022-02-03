@@ -2,15 +2,33 @@ import React, { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import avatar from '../public/img/eu.jpg'
-import githubIcon from '../public/img/iconmonstr-github-1.svg'
-import linkedinIcon from '../public/img/linkedin.png'
-import emailIcon from '../public/img/email.png'
+import { motion } from 'framer-motion'
+import { icons } from './data'
 
 export default function landingPage() {
     const [text, setText] = useState("")
     const [text2, setText2] = useState("")
     const [showLine, setShowLine] = useState(false)
     const [opa, setOpa] = useState(0)
+
+    const Icon = (props) => {
+        return (
+            <motion.a
+                style={{ position: 'relative', margin: '0px 10px' }}
+                whileHover={{ top: -10 }}
+                href={props.link}
+                target='_blank'
+
+            >
+                <Image
+                    src={props.src}
+                    height={65}
+                    width={65}
+                    alt={props.alt}
+                />
+            </motion.a>
+        )
+    }
 
     const writeText = () => {
         const FullText1 = "Gabriel Santos"
@@ -25,7 +43,7 @@ export default function landingPage() {
                 setShowLine(true)
                 i = 0
             }
-        }, 100)
+        }, 75)
         setTimeout(() => {
             const letters2 = setInterval(() => {
                 setText2(text2 += FullText2[i])
@@ -36,8 +54,8 @@ export default function landingPage() {
                     i = 0
                 }
 
-            }, 100)
-        }, 1400)
+            }, 75)
+        }, 1050)
     }
 
     useEffect(() => {
@@ -48,7 +66,13 @@ export default function landingPage() {
     return <section id='lp' className={styles.landingPage}>
         <div className={styles.banner} />
         <div className={styles.content}>
-            <Image height={250} width={250} src={avatar} className={styles.img} />
+            <Image
+                height={250}
+                width={250}
+                src={avatar}
+                alt='Avatar'
+                className={styles.img}
+            />
             <div style={{ minHeight: '150px' }}>
                 <h1 className={styles.title}>
                     {text}
@@ -59,9 +83,19 @@ export default function landingPage() {
                     {showLine && <span className={styles.line}>|</span>}
                 </h3>
             </div>
+            <div className={styles.iconsContainer} style={{ opacity: opa }}>
+                {icons.map((icon, i) => {
+                    return <Icon key={i} src={icon.src} link={icon.link} alt={icon.alt} />
+                })}
+            </div>
             <div style={{ opacity: opa }}>
             </div>
-            <h4 className={styles.desc} style={{ opacity: opa }}>Adoro tecnologia desde a minha infância, com a programação  encontrei a possibilidade de transformar essa paixão em trabalho, desde então estudo diariamente para criar aplicações cada vez melhores. <br /> Abaixo você pode conferir um pouco mais do meu trabalho e informações de contato, Muito obrigado pela sua visita!</h4>
+            <h4 className={styles.desc} style={{ opacity: opa }}>
+                Adoro tecnologia desde a minha infância, com a programação  encontrei a possibilidade de
+                transformar esta paixão em trabalho, desde então estudo diariamente para criar aplicações cada
+                vez melhores. <br /> Abaixo você pode conferir um pouco mais do meu trabalho e informações de
+                contato, muito obrigado pela sua visita!
+            </h4>
         </div>
     </section>
 }

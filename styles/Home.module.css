@@ -44,14 +44,13 @@
   left: 15px;
   top: 50%;
   margin-top: -135px;
-  width: 50px;
+  width: 65px;
   height: 270px;
   display: flex;
   justify-self: center;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-size: 18pt;
   z-index: 100;
   overflow: hidden;
   background-color: #30344c;
@@ -61,7 +60,6 @@
 
 .link {
   margin: 10px;
-  width: 30px;
   cursor: pointer;
   user-select: none;
 }
@@ -85,7 +83,18 @@
 }
 
 .LPicon {
- margin: 150px;
+  margin: 150px;
+}
+
+.iconsContainer {
+  max-width: 350px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: all .5s;
 }
 
 @keyframes blink {
@@ -124,7 +133,7 @@
     display: none;
   }
 
-  .navMobile {
+  .nav {
     position: fixed;
     margin-top: 0;
     width: 100%;
@@ -138,9 +147,9 @@
     overflow: hidden;
     background-color: #30344c;
     border-radius: 0;
-    bottom: 0;
+    bottom: 0px;
     right: 0px;
     left: 0px;
-
+    top: calc(100% - 60px);
   }
 }

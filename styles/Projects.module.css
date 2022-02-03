@@ -19,7 +19,7 @@
     color: #d8e6f4;
     font-size: 38pt;
     margin: auto;
-    padding:10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,6 @@
 }
 
 .card {
-    width: 100%;
     height: 100px;
     overflow: hidden;
     display: flex;
@@ -79,10 +78,18 @@
     width: 430px;
 }
 
+.minorText {
+    font-size: 28pt;
+}
+.minorTextB {
+    font-size: 16pt;
+}
+
 @media (max-width:800px) {
     .projects {
         padding: 5px;
     }
+
     .projectsDescContainer {
         flex-direction: column;
     }
@@ -95,11 +102,31 @@
         display: flex;
         flex-direction: column;
     }
+
     .card {
-        position: initial;
-        height: 240px;
+        position: block;
+        height: auto;
     }
+    
+    .card:hover {
+        height: auto;
+    }
+    
     .containerB {
         width: 95%;
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .minorText {
+        font-size: 20pt;
+    }
+    .minorTextB {
+        font-size: 11pt;
     }
 }
