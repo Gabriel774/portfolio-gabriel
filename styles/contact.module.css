@@ -1,9 +1,9 @@
-.skills {
+.contact {
     width: 100%;
     text-align: center;
     padding: 0 10%;
-    margin-top: 0px;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .title {
@@ -26,40 +26,73 @@
     max-width: 55%;
 }
 
-.skillsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 .desc {
     margin-top: 50px;
     margin-bottom: 50px;
+    flex-direction: row;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
 
-.skill {
+.buttons {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
-    padding: 5px;
-    height: 290px;
-    width: 175px;
-    margin: 15px;
-    border-radius: 15px 0px 10px 0px;
-    user-select: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon {
-    width: 1000px;
+.button {
+    cursor: pointer;
+    width: 500px;
+    font-size: 22pt;
+    border: solid 1px dodgerblue;
+    color: dodgerblue;
+    background: transparent;
+    padding: 15px;
+    transition: all .2s;
+}
+
+.button:hover {
+    background: dodgerblue;
+    color: #d8e7f5;
+}
+
+.button:active {
+    background: rgb(24, 112, 201);
+}
+
+.btngreen {
+    border-color: #2EB086;
+    color: #2EB086;
+}
+
+.btngreen:hover {
+    background-color: #2EB086;
+    color: #d8e7f5;
+}
+
+.btngreen:active {
+    background-color: #218163;
+}
+
+.btnpurple {
+    border-color: #4a4e9c;
+    color: #4a4e9c;
+}
+
+.btnpurple:hover {
+    background-color: #4a4e9c;
+    color: #d8e7f5;
+}
+
+.btnpurple:active {
+    background-color: #34376e;
 }
 
 @media (max-width: 800px) {
-    .skills {
+    .contact {
         padding: 1%;
     }
 
@@ -70,6 +103,10 @@
     .subTitle {
         max-width: 99%;
         margin-bottom: 35px;
+    }
+
+    .button {
+        width: 95%;
     }
 }
 

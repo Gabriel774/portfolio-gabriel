@@ -6,9 +6,6 @@ import { motion } from 'framer-motion'
 import { icons } from './data'
 
 export default function landingPage() {
-    const [text, setText] = useState("")
-    const [text2, setText2] = useState("")
-    const [showLine, setShowLine] = useState(false)
     const [opa, setOpa] = useState(0)
 
     const Icon = (props) => {
@@ -30,36 +27,8 @@ export default function landingPage() {
         )
     }
 
-    const writeText = () => {
-        const FullText1 = "Gabriel Santos"
-        const FullText2 = "Desenvolvedor Web"
-
-        let i = 0
-        const letters = setInterval(() => {
-            setText(text += FullText1[i])
-            i++
-            if (i == FullText1.length) {
-                clearInterval(letters)
-                setShowLine(true)
-                i = 0
-            }
-        }, 75)
-        setTimeout(() => {
-            const letters2 = setInterval(() => {
-                setText2(text2 += FullText2[i])
-                i++
-                if (i == FullText2.length) {
-                    clearInterval(letters2)
-                    setOpa(1)
-                    i = 0
-                }
-
-            }, 75)
-        }, 1050)
-    }
-
     useEffect(() => {
-        writeText()
+        setOpa(1)
     }, [])
 
 
@@ -73,14 +42,12 @@ export default function landingPage() {
                 alt='Avatar'
                 className={styles.img}
             />
-            <div style={{ minHeight: '150px' }}>
-                <h1 className={styles.title}>
-                    {text}
-                    {!showLine && <span className={styles.line}>|</span>}
+            <div style={{ minHeight: '150px' }} >
+                <h1 className={styles.title} style={{ opacity: opa }}>
+                    Gabriel Santos
                 </h1>
-                <h3 className={styles.subtitle}>
-                    {text2}
-                    {showLine && <span className={styles.line}>|</span>}
+                <h3 className={styles.subtitle} style={{ opacity: opa }}>
+                    Desenvolvedor Front-End
                 </h3>
             </div>
             <div className={styles.iconsContainer} style={{ opacity: opa }}>
@@ -91,7 +58,8 @@ export default function landingPage() {
             <div style={{ opacity: opa }}>
             </div>
             <h4 className={styles.desc} style={{ opacity: opa }}>
-                Adoro tecnologia desde a minha infância, com a programação  encontrei a possibilidade de
+                Adoro tecnologia desde a minha infância, após fazer um curso técnico de Análise e
+                Desenvolvimento de Sistemas descobri a programação e com ela encontrei a possibilidade de
                 transformar esta paixão em trabalho, desde então estudo diariamente para criar aplicações cada
                 vez melhores. <br /> Abaixo você pode conferir um pouco mais do meu trabalho e informações de
                 contato, muito obrigado pela sua visita!

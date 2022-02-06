@@ -81,6 +81,7 @@
 .minorText {
     font-size: 28pt;
 }
+
 .minorTextB {
     font-size: 16pt;
 }
@@ -107,26 +108,35 @@
         position: block;
         height: auto;
     }
-    
+
     .card:hover {
         height: auto;
     }
-    
+
     .containerB {
         width: 95%;
     }
 }
 
 @media (max-width: 400px) {
-    .title {
-        width: 95%;
-        flex-direction: column;
-    }
 
     .minorText {
         font-size: 20pt;
     }
+
     .minorTextB {
         font-size: 11pt;
+    }
+}
+
+@media (max-width: 450px) {
+    .title {
+        width: 99%;
+        flex-direction: column;
+    }
+
+    .nbsp {
+        display: none;
+        margin-top: 10px;
     }
 }

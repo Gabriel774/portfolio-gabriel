@@ -19,7 +19,7 @@ export default function Projects() {
                 target='_blank'
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ once: true, amount: 0.65 }}
+                viewport={{ once: true, amount: 0.5 }}
             >
                 <div className={styles.card} style={{ background: props.color }}>
                     {props.name}
@@ -31,9 +31,27 @@ export default function Projects() {
 
     return (
         <section id='projects' className={styles.projects}>
-            <h1 className={styles.title}>Projetos &nbsp; <Image height={45} width={45} alt='Ícone Projetos' src={codeIcon} /> </h1>
+            <motion.h1
+                className={styles.title}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.3 }}
+            >
+                Projetos <span className={styles.nbsp}>&nbsp;</span> <Image
+                    height={45}
+                    width={45}
+                    alt='Ícone Projetos'
+                    src={codeIcon}
+                />
+            </motion.h1>
             <div className={styles.projectsDescContainer}>
-                <h2 className={styles.subTitle}>Abaixo você pode conferir alguns dos projetos que já fiz
+                <motion.h2
+                    className={styles.subTitle}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                >
+                    Abaixo você pode conferir alguns dos projetos que já fiz
                     (clique para acessá-los), em geral, gosto de desenvolver projetos originais já que usam
                     mais da minha criatividade. Confira também o meu <a
                         style={{ textDecoration: 'underline', color: 'rgb(70, 70, 192)' }}
@@ -41,8 +59,14 @@ export default function Projects() {
                         href="https://github.com/gabriel774"
                     >
                         GitHub
-                    </a>.</h2>
-                <Image src={vector} className={styles.vector} />
+                    </a>.</motion.h2>
+                <motion.span
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                >
+                    <Image src={vector} className={styles.vector} />
+                </motion.span>
             </div>
             <motion.div className={styles.container}>
                 {projects.map((project, i) => {

@@ -12,6 +12,16 @@
   background-repeat: no-repeat;
 }
 
+.footer {
+  height: 32vh;
+  flex-direction: row;
+  width: 100%;
+  background-image: url("../public/img/Footer.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .landingPage {
   width: 100%;
   display: flex;
@@ -25,12 +35,14 @@
   font-size: 46pt;
   font-family: oswald;
   margin: 0;
+  transition: opacity .5s;
 }
 
 .subtitle {
   font-size: 28pt;
   font-family: oswald;
   margin: 0;
+  transition: opacity .5s;
 }
 
 .desc {
@@ -80,6 +92,7 @@
 
 .line {
   animation: blink 1.25s infinite;
+  font-family: oswald;
 }
 
 .LPicon {
@@ -150,6 +163,6 @@
     bottom: 0px;
     right: 0px;
     left: 0px;
-    top: calc(100% - 60px);
+    top: auto;
   }
 }

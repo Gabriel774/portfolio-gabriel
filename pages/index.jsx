@@ -3,7 +3,8 @@ import styles from '../styles/Home.module.css'
 import LandingPage from '../components/LandingPage'
 import Projects from '../components/Projects'
 import Navbar from '../components/NavBar'
-import Skills from '../components/skills'
+import Skills from '../components/Skills'
+import Contact from '../components/Contact'
 
 export default function Home() {
   return (
@@ -20,9 +21,10 @@ export default function Home() {
         <LandingPage />
         <Projects />
         <Skills />
+        <Contact />
       </main>
 
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer} />
     </div>
   )
 }
