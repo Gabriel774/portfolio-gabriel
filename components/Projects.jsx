@@ -57,6 +57,7 @@ export default function Projects() {
                     mais da minha criatividade. Confira também o meu <a
                         style={{ textDecoration: 'underline', color: 'rgb(70, 70, 192)' }}
                         target='_blank'
+                        rel="noreferrer"
                         href="https://github.com/gabriel774"
                     >
                         GitHub
@@ -66,7 +67,7 @@ export default function Projects() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true, amount: 0.3 }}
                 >
-                    <Image src={vector} className={styles.vector} />
+                    <Image src={vector} alt="Vetor projetos" className={styles.vector} />
                 </motion.span>
             </div>
             <motion.div className={styles.container}>

@@ -35,7 +35,12 @@ export default function skills() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
             >
-                Tecnologias <span className={styles.nbsp}>&nbsp;</span> <Image height={45} width={45} src={skillsIcon} />
+                Tecnologias <span className={styles.nbsp}>&nbsp;</span> <Image
+                    height={45}
+                    width={45}
+                    alt="ícone tecnologias"
+                    src={skillsIcon}
+                />
             </motion.h1>
             <div className={styles.desc}>
                 <motion.h2
