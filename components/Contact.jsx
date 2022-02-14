@@ -66,7 +66,7 @@ export default function Contact() {
                 </motion.a>
 
                 <motion.a
-                    href=""
+                    href="https://drive.google.com/file/d/1Wc6u8bCasCiXWQSUVPkauudVT1d07xPV/view?usp=sharing"
                     style={{ margin: '15px', padding: '0', width: '100%' }}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
