@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import avatar from '../public/img/eu.jpg'
@@ -6,7 +5,6 @@ import { motion } from 'framer-motion'
 import { icons } from './data'
 
 export default function landingPage() {
-    const [opa, setOpa] = useState(0)
 
     const Icon = (props) => {
         return (
@@ -27,11 +25,6 @@ export default function landingPage() {
         )
     }
 
-    useEffect(() => {
-        setOpa(1)
-    }, [])
-
-
     return <section id='lp' className={styles.landingPage}>
         <div className={styles.banner} />
         <div className={styles.content}>
@@ -43,21 +36,21 @@ export default function landingPage() {
                 className={styles.img}
             />
             <div style={{ minHeight: '150px' }} >
-                <h1 className={styles.title} style={{ opacity: opa }}>
+                <h1 className={styles.title}>
                     Gabriel Santos
                 </h1>
-                <h3 className={styles.subtitle} style={{ opacity: opa }}>
+                <h3 className={styles.subtitle}>
                     Desenvolvedor Front-End
                 </h3>
             </div>
-            <div className={styles.iconsContainer} style={{ opacity: opa }}>
+            <div className={styles.iconsContainer}>
                 {icons.map((icon, i) => {
                     return <Icon key={i} src={icon.src} link={icon.link} alt={icon.alt} />
                 })}
             </div>
-            <div style={{ opacity: opa }}>
+            <div>
             </div>
-            <h4 className={styles.desc} style={{ opacity: opa }}>
+            <h4 className={styles.desc}>
                 Adoro tecnologia desde a minha infância, após fazer um curso técnico de Análise e
                 Desenvolvimento de Sistemas descobri a programação e com ela encontrei a possibilidade de
                 transformar esta paixão em trabalho, desde então estudo diariamente para criar aplicações cada
