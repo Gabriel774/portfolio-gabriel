@@ -17,6 +17,7 @@ export default function Projects() {
                 style={{ zIndex: props.zIndex }}
                 href={props.link}
                 target='_blank'
+                rel="noreferrer"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, amount: 0.5 }}

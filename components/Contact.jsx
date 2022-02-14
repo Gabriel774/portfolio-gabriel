@@ -49,6 +49,7 @@ export default function Contact() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true, amount: 0.3 }}
                     target='_blank'
+                    rel="noreferrer"
                 >
                     <button className={styles.button}>Linkedin</button>
                 </motion.a>
@@ -59,6 +60,7 @@ export default function Contact() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true, amount: 0.3 }}
+                    rel="noreferrer"
                 >
                     <button className={`${styles.button} ${styles.btngreen}`}>
                         E-mail
@@ -72,6 +74,7 @@ export default function Contact() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true, amount: 0.3 }}
                     target='_blank'
+                    rel="noreferrer"
                 >
                     <button className={`${styles.button} ${styles.btnpurple}`}>
                         Curriculum Vitae
