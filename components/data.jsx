@@ -43,6 +43,12 @@ export const projects = [
         color: '#30344c',
         desc: <p className={styles.cardDesc} style={{ color: '#d8e6f4' }}>Um jogo de turnos no qual seu objetivo é derrotar um monstro, foi desenvolvido em resposta a um desafio do curso da COD3R de VueJS.</p>,
     },
+    {
+        name: <h1 className={`${styles.cardTitle} ${styles.minorText}`} style={{ fontFamily: "arial", color: '#d8e6f4', marginTop: '10px', marginTop: '30px', marginBottom: '42px' }}>Cronômetro & Timer</h1>,
+        link: 'https://cronometro-timer.vercel.app',
+        color: 'RGB(31,31,31)',
+        desc: <p className={styles.cardDesc} style={{ color: '#d8e6f4' }}>Projeto de cronômetro e timer, foi como reimaginação de um projeto antigo meu, adicionando a opção timer e animações, foi desenvolvido em ReactJS</p>,
+    },
 ]
 
 export const links = [
