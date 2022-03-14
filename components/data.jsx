@@ -3,6 +3,7 @@ import homeIcon from '../public/img/home.png'
 import codeIcon from '../public/img/coding.png'
 import skillsIcon from '../public/img/habilidades.png'
 import contactIcon from '../public/img/correspondencia.png'
+import educationIcon from '../public/img/education.png'
 import githubIcon from '../public/img/25231.png'
 import linkedinIcon from '../public/img/linkedin.png'
 import emailIcon from '../public/img/email.png'
@@ -16,6 +17,9 @@ import illustratorIcon from '../public/img/ai.png'
 import tsIcon from '../public/img/ts.png'
 import sqlIcon from '../public/img/sql.png'
 import psIcon from '../public/img/ps.png'
+import uamIcon from '../public/img/uam.jpg'
+import etecIcon from '../public/img/T.png'
+import udemyIcon from '../public/img/udemy.png'
 
 
 export const projects = [
@@ -44,16 +48,25 @@ export const projects = [
         desc: <p className={styles.cardDesc} style={{ color: '#d8e6f4' }}>Um jogo de turnos no qual seu objetivo é derrotar um monstro, foi desenvolvido em resposta a um desafio do curso da COD3R de VueJS.</p>,
     },
     {
-        name: <h1 className={`${styles.cardTitle} ${styles.minorText}`} style={{ fontFamily: "arial", color: '#d8e6f4', marginTop: '10px', marginTop: '30px', marginBottom: '42px' }}>Cronômetro & Timer</h1>,
+        name: <h1 className={`${styles.cardTitle} ${styles.minorText}`} style={{ fontFamily: "arial", color: '#62b1ff', marginTop: '10px', marginTop: '30px', marginBottom: '42px' }}>Cronômetro & Timer</h1>,
         link: 'https://cronometro-timer.vercel.app',
         color: 'RGB(31,31,31)',
-        desc: <p className={styles.cardDesc} style={{ color: '#d8e6f4' }}>Projeto de cronômetro e timer, foi como reimaginação de um projeto antigo meu, adicionando a opção timer e animações, foi desenvolvido em ReactJS</p>,
+        desc: <p className={styles.cardDesc} style={{ color: '#d8e6f4' }}>Projeto de um cronômetro e timer, foi desenvolvido como reimaginação de um projeto antigo meu, adicionando a opção timer e animações, foi desenvolvido em ReactJS</p>,
     },
+]
+
+export const courses = [
+    { name: 'Tecnólogo - Análise e Desenvolvimento de Sistemas', institution: 'Universidade Anhembi Morumbi (UAM)', date: 'Fevereiro 2022 - Junho 2025', icon: uamIcon, alt: 'Ícone Universidade Anhembi Morumbi (UAM)', color: '#007C6B', link: 'https://portal.anhembi.br/graduacao/cursos/tecnologia-em-analise-e-desenvolvimento-de-sistemas/#sobre' },
+    { name: 'Curso Técnico - Análise e Desenvolvimento de Sistemas', institution: 'ETEC Professor Aprígio Gonzaga', date: 'Fevereiro 2020 - Junho 2021', icon: etecIcon, alt: 'Ícone Etec', color: '#19347C', link: 'https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/' },
+    { name: 'Curso ReactJS + Redux', institution: 'Udemy / Cod3r', date: 'Julho 2021 - Setembro 2021', icon: udemyIcon, alt: 'Ícone Udemy', color: '#a435f0', link: 'https://www.udemy.com/certificate/UC-d7737b23-51ef-43ae-a2e7-71338090ecfd/' },
+    { name: 'Curso VueJS (incl. Vue Router & Vuex)', institution: 'Udemy / Cod3r', date: 'Fevereiro 2021 - Junho 2021', icon: udemyIcon, alt: 'Ícone Udemy', color: '#a435f0', link: 'https://www.udemy.com/certificate/UC-4357b2c5-673d-4b48-b73c-a375e0440674/' },
+    //{ name: '', institution: '', date: '', icon: '', alt: '', color: '', link: '' },
 ]
 
 export const links = [
     { name: 'Início', alt: 'Ir para o início', src: homeIcon, link: 'lp' },
     { name: 'Projetos', alt: 'Ir para os projetos', src: codeIcon, link: 'projects' },
+    { name: 'Formações', alt: 'Ir para Formações', src: educationIcon, link: 'education' },
     { name: 'Tecnologias', alt: 'Ir para tecnologias', src: skillsIcon, link: 'skills' },
     { name: 'Contato', alt: 'Ir para contatos', src: contactIcon, link: 'contact' },
 ]

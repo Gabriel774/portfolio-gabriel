@@ -57,7 +57,7 @@
   top: 50%;
   margin-top: -135px;
   width: 65px;
-  height: 270px;
+  height: 300px;
   display: flex;
   justify-self: center;
   flex-direction: column;
@@ -68,6 +68,11 @@
   background-color: #30344c;
   border-radius: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.089);
+  transition: transform .2s;
+}
+
+.nav:hover {
+  transform: scale(1.16);
 }
 
 .link {
@@ -164,5 +169,9 @@
     right: 0px;
     left: 0px;
     top: auto;
+  }
+
+  .nav:hover {
+    transform: none;
   }
 }

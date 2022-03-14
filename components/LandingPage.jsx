@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
-import avatar from '../public/img/eu.jpg'
+import avatar from '../public/img/profile-pic.png'
 import { motion } from 'framer-motion'
 import { icons } from './data'
 
@@ -40,7 +40,7 @@ export default function landingPage() {
                     Gabriel Santos
                 </h1>
                 <h3 className={styles.subtitle}>
-                    Desenvolvedor
+                    Desenvolvedor Front-End
                 </h3>
             </div>
             <div className={styles.iconsContainer}>
@@ -51,11 +51,10 @@ export default function landingPage() {
             <div>
             </div>
             <h4 className={styles.desc}>
-                Adoro tecnologia desde a minha infância, após fazer um curso técnico de Análise e
-                Desenvolvimento de Sistemas descobri a programação e com ela encontrei a possibilidade de
-                transformar esta paixão em trabalho, desde então estudo diariamente para criar aplicações cada
-                vez melhores. <br /> Abaixo você pode conferir um pouco mais do meu trabalho e informações de
-                contato, muito obrigado pela sua visita!
+                Sou apaixonado por tecnologia em geral desde que me conheço por gente, atuo como desenvolvedor
+                há dois anos e estudo diariamente para criar aplicações cada vez melhores, comecei fazendo
+                um curso técnico de Análise e Desenvolvimento de Sistemas, e atualmente estou cursando
+                tecnólogo também em ADS na Universidade Anhembi Morumbi.
             </h4>
         </div>
     </section>
