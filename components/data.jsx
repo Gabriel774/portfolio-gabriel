@@ -58,7 +58,7 @@ export const projects = [
 
 export const courses = [
     { name: 'Tecnólogo - Análise e Desenvolvimento de Sistemas', institution: 'Universidade Anhembi Morumbi (UAM)', date: 'Fevereiro 2022 - Junho 2025', icon: uamIcon, alt: 'Ícone Universidade Anhembi Morumbi (UAM)', color: '#007C6B', link: 'https://portal.anhembi.br/graduacao/cursos/tecnologia-em-analise-e-desenvolvimento-de-sistemas/#sobre' },
-    { name: 'Curso Técnico - Análise e Desenvolvimento de Sistemas', institution: 'ETEC Professor Aprígio Gonzaga', date: 'Fevereiro 2020 - Junho 2021', icon: etecIcon, alt: 'Ícone Etec', color: '#19347C', link: 'https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/' },
+    { name: 'Curso Técnico - Desenvolvimento de Sistemas', institution: 'ETEC Professor Aprígio Gonzaga', date: 'Fevereiro 2020 - Junho 2021', icon: etecIcon, alt: 'Ícone Etec', color: '#19347C', link: 'https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/' },
     { name: 'Curso ReactJS + Redux', institution: 'Udemy / Cod3r', date: 'Julho 2021 - Setembro 2021', icon: udemyIcon, alt: 'Ícone Udemy', color: '#a435f0', link: 'https://www.udemy.com/certificate/UC-d7737b23-51ef-43ae-a2e7-71338090ecfd/' },
     { name: 'Curso VueJS (incl. Vue Router & Vuex)', institution: 'Udemy / Cod3r', date: 'Fevereiro 2021 - Junho 2021', icon: udemyIcon, alt: 'Ícone Udemy', color: '#a435f0', link: 'https://www.udemy.com/certificate/UC-4357b2c5-673d-4b48-b73c-a375e0440674/' },
     //{ name: '', institution: '', date: '', icon: '', alt: '', color: '', link: '' },
