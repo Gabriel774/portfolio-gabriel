@@ -20,6 +20,7 @@ import psIcon from '../public/img/ps.png'
 import uamIcon from '../public/img/uam.jpg'
 import etecIcon from '../public/img/T.png'
 import udemyIcon from '../public/img/udemy.png'
+import nodeIcon from '../public/img/nodejs-logo-FBE122E377-seeklogo.com.png'
 
 
 export const projects = [
@@ -82,10 +83,11 @@ export const skillsData = [
     { name: 'CSS3', src: cssIcon, alt: 'Ícone CSS', color: '#32aadc', textColor: 'white' },
     { name: 'HTML5', src: htmlIcon, alt: 'Ícone HTML', color: '#f06428', textColor: 'white' },
     { name: 'ReactJS', src: reactIcon, alt: 'Ícone React', color: '#222222', textColor: '#5fd9f9' },
+    { name: 'NodeJS', src: nodeIcon, alt: 'Ícone NodeJS', color: '#393939', textColor: '#539e43' },
     { name: 'VueJS', src: vueIcon, alt: 'Ícone VueJS', color: '#30324d', textColor: '#4cb987' },
     { name: 'PHP', src: phpIcon, alt: 'Ícone PHP', color: '#4d5b92', textColor: 'white' },
     { name: 'Illustrator', src: illustratorIcon, alt: 'Ícone Illustrator', color: '#1b0a02', textColor: '#ff7919' },
     { name: 'MySQL', src: sqlIcon, alt: 'Ícone MySQL', color: '#4478a2', textColor: 'white' },
     { name: 'Photoshop', src: psIcon, alt: 'Ícone Photoshop', color: '#292848', textColor: '#23d4fe' },
-    { name: 'TypeScript', src: tsIcon, alt: 'Ícone PHP', color: '#0079cd', textColor: 'white' },
+    { name: 'TypeScript', src: tsIcon, alt: 'Ícone TypeScript', color: '#0079cd', textColor: 'white' },
 ]
