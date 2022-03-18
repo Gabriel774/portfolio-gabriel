@@ -1,4 +1,5 @@
 import styles from '../styles/Projects.module.css'
+import contactStyles from '../styles/contact.module.css'
 import homeIcon from '../public/img/home.png'
 import codeIcon from '../public/img/coding.png'
 import skillsIcon from '../public/img/habilidades.png'
@@ -21,7 +22,6 @@ import uamIcon from '../public/img/uam.jpg'
 import etecIcon from '../public/img/T.png'
 import udemyIcon from '../public/img/udemy.png'
 import nodeIcon from '../public/img/nodejs-logo-FBE122E377-seeklogo.com.png'
-
 
 export const projects = [
     {
@@ -61,7 +61,6 @@ export const courses = [
     { name: 'Curso Técnico - Desenvolvimento de Sistemas', institution: 'ETEC Professor Aprígio Gonzaga', date: 'Fevereiro 2020 - Junho 2021', icon: etecIcon, alt: 'Ícone Etec', color: '#19347C', link: 'https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/' },
     { name: 'Curso ReactJS + Redux', institution: 'Udemy / Cod3r', date: 'Julho 2021 - Setembro 2021', icon: udemyIcon, alt: 'Ícone Udemy', color: '#a435f0', link: 'https://www.udemy.com/certificate/UC-d7737b23-51ef-43ae-a2e7-71338090ecfd/' },
     { name: 'Curso VueJS (incl. Vue Router & Vuex)', institution: 'Udemy / Cod3r', date: 'Fevereiro 2021 - Junho 2021', icon: udemyIcon, alt: 'Ícone Udemy', color: '#a435f0', link: 'https://www.udemy.com/certificate/UC-4357b2c5-673d-4b48-b73c-a375e0440674/' },
-    //{ name: '', institution: '', date: '', icon: '', alt: '', color: '', link: '' },
 ]
 
 export const links = [
@@ -90,4 +89,10 @@ export const skillsData = [
     { name: 'MySQL', src: sqlIcon, alt: 'Ícone MySQL', color: '#4478a2', textColor: 'white' },
     { name: 'Photoshop', src: psIcon, alt: 'Ícone Photoshop', color: '#292848', textColor: '#23d4fe' },
     { name: 'TypeScript', src: tsIcon, alt: 'Ícone TypeScript', color: '#0079cd', textColor: 'white' },
+]
+
+export const contactLink = [
+    { name: 'LinkedIn', link: 'https://www.linkedin.com/in/gabriel-santos-de-sousa-4b72aa208/', color: '' },
+    { name: 'Curriculum Vitae', link: 'https://drive.google.com/file/d/1TEpgSxedbOfhxCy8TTxNxJSY7my6iTwN/view?usp=sharing', color: contactStyles.btnpurple },
+    { name: 'E-mail', link: 'mailto:gabrielsantossousa774@gmail.com', color: contactStyles.btngreen },
 ]

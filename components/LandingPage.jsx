@@ -40,7 +40,7 @@ export default function landingPage() {
                     Gabriel Santos
                 </h1>
                 <h3 className={styles.subtitle}>
-                    Desenvolvedor Full Stack
+                    Desenvolvedor Front-End
                 </h3>
             </div>
             <div className={styles.iconsContainer}>

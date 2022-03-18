@@ -3,6 +3,7 @@ import contactIcon from '../public/img/correspondencia.png'
 import styles from '../styles/contact.module.css'
 import Image from 'next/image'
 import vector from '../public/img/Sending-emails_Flatline.png'
+import { contactLink } from './data'
 
 export default function Contact() {
     return (
@@ -42,44 +43,21 @@ export default function Contact() {
                 </motion.span>
             </div>
             <div className={styles.buttons}>
-                <motion.a
-                    href="https://www.linkedin.com/in/gabriel-santos-de-sousa-4b72aa208/"
-                    style={{ margin: '15px', padding: '0', width: '100%' }}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    target='_blank'
-                    rel="noreferrer"
-                >
-                    <button className={styles.button}>Linkedin</button>
-                </motion.a>
-
-                <motion.a
-                    href="mailto:gabrielsantossousa774@gmail.com"
-                    style={{ margin: '15px', padding: '0', width: '100%' }}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    rel="noreferrer"
-                >
-                    <button className={`${styles.button} ${styles.btngreen}`}>
-                        E-mail
-                    </button>
-                </motion.a>
-
-                <motion.a
-                    href="https://drive.google.com/file/d/1Wc6u8bCasCiXWQSUVPkauudVT1d07xPV/view?usp=sharing"
-                    style={{ margin: '15px', padding: '0', width: '100%' }}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    target='_blank'
-                    rel="noreferrer"
-                >
-                    <button className={`${styles.button} ${styles.btnpurple}`}>
-                        Curriculum Vitae
-                    </button>
-                </motion.a>
+                {contactLink.map((contact) => {
+                    return <motion.a
+                        href={contact.link}
+                        style={{ margin: '15px', padding: '0', width: '100%' }}
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        target='_blank'
+                        rel="noreferrer"
+                    >
+                        <button className={`${styles.button} ${contact.color}`}>
+                            {contact.name}
+                        </button>
+                    </motion.a>
+                })}
             </div>
         </section>
     )
