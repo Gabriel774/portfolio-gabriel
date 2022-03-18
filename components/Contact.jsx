@@ -52,6 +52,7 @@ export default function Contact() {
                         viewport={{ once: true, amount: 0.3 }}
                         target='_blank'
                         rel="noreferrer"
+                        key={contact.name}
                     >
                         <button className={`${styles.button} ${contact.color}`}>
                             {contact.name}
