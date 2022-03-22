@@ -53,8 +53,8 @@ export default function landingPage() {
             <h4 className={styles.desc}>
                 Sou apaixonado por tecnologia em geral desde que me conheço por gente, atuo como desenvolvedor
                 há dois anos e estudo diariamente para criar aplicações cada vez melhores, comecei fazendo
-                um curso técnico de Análise e Desenvolvimento de Sistemas, e atualmente estou cursando
-                tecnólogo também em ADS na Universidade Anhembi Morumbi.
+                um curso técnico de Desenvolvimento de Sistemas, e atualmente estou cursando
+                tecnólogo em Análise e Desenvolvimento de Sistemas na Universidade Anhembi Morumbi.
             </h4>
         </div>
     </section>
