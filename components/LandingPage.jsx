@@ -40,13 +40,18 @@ export default function landingPage() {
                     Gabriel Santos
                 </h1>
                 <h3 className={styles.subtitle}>
-                    Desenvolvedor Front-End
+                    Desenvolvedor Full-Stack
                 </h3>
             </div>
             <div className={styles.iconsContainer}>
-                {icons.map((icon, i) => {
-                    return <Icon key={i} src={icon.src} link={icon.link} alt={icon.alt} />
-                })}
+                {icons.map((icon, i) =>
+                    <Icon
+                        key={i}
+                        src={icon.src}
+                        link={icon.link}
+                        alt={icon.alt}
+                    />
+                )}
             </div>
             <div>
             </div>
