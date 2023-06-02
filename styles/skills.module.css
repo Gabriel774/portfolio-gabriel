@@ -58,6 +58,11 @@
     width: 1000px;
 }
 
+.swiperContainer {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
 @media (max-width: 800px) {
     .skills {
         padding: 1%;
