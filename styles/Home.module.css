@@ -8,6 +8,12 @@
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .main {
+    padding: 0 20px;
+  }
+}
+
 .banner {
   height: 32vh;
   flex-direction: row;
@@ -41,20 +47,20 @@
   font-size: 46pt;
   font-family: oswald;
   margin: 0;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .subtitle {
   font-size: 28pt;
   font-family: oswald;
   margin: 0;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .desc {
   font-size: 20pt;
   margin: 10px 15px;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .nav {
@@ -73,7 +79,7 @@
   background-color: #30344c;
   border-radius: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.089);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .nav:hover {
@@ -89,6 +95,42 @@
 .img {
   border-radius: 100%;
 }
+
+.navLinkContainer {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #30344c;
+  color: #d8e7f5;
+  padding: 10px 20px;
+  right: -140px;
+  z-index: 1000;
+  width: 120px;
+  border-radius: 6px;
+  top: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+  animation: appear .3s;
+}
+
+.tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 99%;
+  /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #30344c transparent transparent;
+  z-index: 1001
+}
+
+.scrollLink {}
 
 .content {
   text-align: center;
@@ -117,7 +159,7 @@
   margin: auto;
   margin-top: 15px;
   margin-bottom: 15px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 @keyframes blink {
@@ -134,10 +176,19 @@
   }
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 800px) {
   .banner {
     height: 25vh;
-
   }
 
   .content {
@@ -157,26 +208,7 @@
   }
 
   .nav {
-    position: fixed;
-    margin-top: 0;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 18pt;
-    z-index: 100;
-    background-color: #30344c;
-    border-radius: 0;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    top: auto;
-  }
-
-  .nav:hover {
-    transform: none;
+    display: none;
   }
 
   .tooltipDisable {
@@ -186,24 +218,24 @@
 
 @media (min-width: 1950px) {
   .nav {
-    left: calc(12vw - 65px)
+    left: calc(12vw - 65px);
   }
 }
 
 @media (min-width: 2700px) {
   .nav {
-    left: calc(22vw - 65px)
+    left: calc(22vw - 65px);
   }
 }
 
 @media (min-width: 3200px) {
   .nav {
-    left: calc(25vw - 65px)
+    left: calc(25vw - 65px);
   }
 }
 
 @media (min-width: 3700px) {
   .nav {
-    left: calc(28vw - 65px)
+    left: calc(28vw - 65px);
   }
 }

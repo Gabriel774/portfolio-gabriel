@@ -6,6 +6,7 @@ import Education from "../components/Education";
 import Navbar from "../components/NavBar";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
+import NavMobile from "../components/NavMobile";
 
 export default function Home() {
   return (
@@ -34,17 +35,30 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
+      <div id="lp-scroll" />
+
       <div className={styles.banner} />
-      <Navbar />
 
       <main className={styles.main}>
         <LandingPage />
+
         <Projects />
+
+        <div className={styles.scrollLink} id="education-scroll" />
+
         <Education />
+
+        <div className={styles.scrollLink} id="skills-scroll" />
+
         <Skills />
+
+        <div className={styles.scrollLink} id="contact-scroll" />
+
         <Contact />
       </main>
 
+      <Navbar />
+      <NavMobile />
       <footer className={styles.footer} />
     </div>
   );

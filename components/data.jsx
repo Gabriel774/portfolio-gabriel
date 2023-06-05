@@ -215,30 +215,30 @@ export const courses = [
 ];
 
 export const links = [
-  { name: "Início", alt: "Ir para o início", src: homeIcon, link: "lp" },
+  { name: "Início", alt: "Ir para o início", src: homeIcon, link: "lp-scroll" },
   {
     name: "Projetos",
     alt: "Ir para os projetos",
     src: codeIcon,
-    link: "projects",
+    link: "projects-scroll",
   },
   {
     name: "Formações",
     alt: "Ir para Formações",
     src: educationIcon,
-    link: "education",
+    link: "education-scroll",
   },
   {
     name: "Tecnologias",
     alt: "Ir para tecnologias",
     src: skillsIcon,
-    link: "skills",
+    link: "skills-scroll",
   },
   {
     name: "Contato",
     alt: "Ir para contatos",
     src: contactIcon,
-    link: "contact",
+    link: "contact-scroll",
   },
 ];
 

@@ -46,6 +46,7 @@ export default function landingPage() {
           Análise e Desenvolvimento de Sistemas na Universidade Anhembi Morumbi.
         </h4>
       </div>
+      <div className={styles.scrollLink} style={{marginBottom: 20}} id="projects-scroll" />
     </section>
   );
 }

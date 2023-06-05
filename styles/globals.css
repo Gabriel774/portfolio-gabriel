@@ -20,6 +20,10 @@ a {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #30344c !important;
+}
+
 ::-webkit-scrollbar {
   width: 11px;
 }

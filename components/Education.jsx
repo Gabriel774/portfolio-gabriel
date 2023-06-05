@@ -1,6 +1,6 @@
 import styles from "../styles/Education.module.css";
 import { motion } from "framer-motion";
-import ilustration from "../public/img/books.png";
+import illustration from "../public/img/books.png";
 import educationIcon from "../public/img/education.png";
 import Image from "next/image";
 import { courses } from "../components/data";
@@ -63,7 +63,7 @@ export default function Education() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <Image src={ilustration} width={300} height={300} alt="Livros" />
+          <Image src={illustration} width={300} height={300} alt="Livros" />
         </motion.span>
       </div>
       <div className={styles.coursesContainer}>
