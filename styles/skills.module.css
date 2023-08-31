@@ -1,90 +1,91 @@
 .skills {
-    width: 100%;
-    text-align: center;
-    padding: 0 10%;
-    margin-top: 0px;
-    margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 0 10%;
+  margin-top: 0px;
+  margin-top: 100px;
 }
 
 .title {
-    color: #d8e6f4;
-    font-size: 38pt;
-    margin: auto;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    width: 400px;
-    background-color: #30344c;
+  color: #d8e6f4;
+  font-size: 38pt;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 400px;
+  background-color: #30344c;
 }
 
 .subTitle {
-    font-size: 19pt;
-    margin: 10px;
-    max-width: 55%;
+  font-size: 19pt;
+  margin: 10px;
+  max-width: 55%;
 }
 
 .skillsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .desc {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 .skill {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
-    padding: 5px;
-    height: 290px;
-    width: 175px;
-    margin: 15px;
-    border-radius: 15px 0px 10px 0px;
-    user-select: none;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+  padding: 5px;
+  height: 290px;
+  width: 175px;
+  margin: 15px;
+  border-radius: 15px 0px 10px 0px;
+  user-select: none;
 }
 
 .icon {
-    width: 1000px;
+  width: 160px;
+  height: 160px;
 }
 
 .swiperContainer {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
 }
 
 @media (max-width: 800px) {
-    .skills {
-        padding: 1%;
-    }
+  .skills {
+    padding: 1%;
+  }
 
-    .desc {
-        flex-direction: column;
-    }
+  .desc {
+    flex-direction: column;
+  }
 
-    .subTitle {
-        max-width: 99%;
-        margin-bottom: 35px;
-    }
+  .subTitle {
+    max-width: 99%;
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 450px) {
-    .title {
-        width: 99%;
-        flex-direction: column;
-    }
+  .title {
+    width: 99%;
+    flex-direction: column;
+  }
 
-    .nbsp {
-        display: none;
-    }
+  .nbsp {
+    display: none;
+  }
 }
