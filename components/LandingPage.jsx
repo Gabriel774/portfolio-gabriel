@@ -39,14 +39,17 @@ export default function landingPage() {
         </div>
         <div></div>
         <h4 className={styles.desc}>
-          Sou apaixonado por tecnologia em geral desde que me conheço por gente,
-          atuo como desenvolvedor há dois anos e estudo diariamente para criar
-          aplicações cada vez melhores, comecei fazendo um curso técnico de
-          Desenvolvimento de Sistemas, e atualmente estou cursando tecnólogo em
-          Análise e Desenvolvimento de Sistemas na Universidade Anhembi Morumbi.
+          Sou Desenvolvedor Full Stack com 2 anos de experiência na área, já
+          trabalhei em projetos como APIs, websites e aplicativos. Sempre
+          presando por surpreender, busco evoluir sempre para construir
+          aplicações cada vez melhores.
         </h4>
       </div>
-      <div className={styles.scrollLink} style={{marginBottom: 20}} id="projects-scroll" />
+      <div
+        className={styles.scrollLink}
+        style={{ marginBottom: 20 }}
+        id="projects-scroll"
+      />
     </section>
   );
 }

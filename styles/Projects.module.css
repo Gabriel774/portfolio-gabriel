@@ -1,144 +1,153 @@
 .projects {
-    margin: 0 auto;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    padding: 0 10%;
-    margin-top: 0px;
-    max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+  margin-top: 0px;
+  max-width: 1920px;
 }
 
 .projectsDescContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0;
+  min-height: 390px;
 }
 
-
 .title {
-    color: #d8e6f4;
-    font-size: 38pt;
-    margin: auto;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    width: 300px;
-    background-color: #30344c;
+  color: #d8e6f4;
+  font-size: 38pt;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #30344c;
 }
 
 .subTitle {
-    font-size: 19pt;
-    margin: 10px;
-    max-width: 55%;
+  font-size: 19pt;
+  margin: 10px;
+  padding: 15px;
+  max-width: 55%;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: auto;
+
+  @media (max-width: 1700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
-    height: 100px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #b3d147;
-    border-radius: 10px;
-    transition: all .2s;
-    top: 0;
-    left: 5px;
-    margin: auto;
-    cursor: pointer;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b3d147;
+  border-radius: 10px;
+  transition: all 0.2s;
+  top: 0;
+  left: 5px;
+  margin: auto;
+  cursor: pointer;
 }
 
 .card:hover {
-    height: 200px;
+  height: 200px;
 }
 
 .cardTitle {
-    font-size: 50px;
-    margin-top: 25px;
-    user-select: none;
+  font-size: 50px;
+  margin-top: 25px;
+  user-select: none;
 }
 
 .cardDesc {
-    margin: 20px;
-    margin-top: -5px;
-    user-select: none;
+  margin: 20px;
+  margin-top: -5px;
+  user-select: none;
 }
 
 .containerB {
-    margin: auto;
-    width: 430px;
+  margin: auto;
+  width: 430px;
 }
 
 .minorText {
-    font-size: 28pt;
+  font-size: 28pt;
 }
 
 .minorTextB {
-    font-size: 16pt;
+  font-size: 16pt;
 }
 
-@media (max-width:800px) {
-    .projects {
-        padding: 5px;
-    }
+@media (max-width: 800px) {
+  .projects {
+    padding: 5px;
+  }
 
-    .projectsDescContainer {
-        flex-direction: column;
-    }
+  .projectsDescContainer {
+    flex-direction: column;
+  }
 
-    .subTitle {
-        max-width: 100%;
-    }
+  .subTitle {
+    max-width: 100%;
+  }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .card {
-        position: block;
-        height: auto;
-    }
+  .card {
+    position: block;
+    height: auto;
+  }
 
-    .card:hover {
-        height: auto;
-    }
+  .card:hover {
+    height: auto;
+  }
 
-    .containerB {
-        width: 95%;
-    }
+  .containerB {
+    width: 95%;
+  }
 }
 
 @media (max-width: 400px) {
+  .minorText {
+    font-size: 20pt;
+  }
 
-    .minorText {
-        font-size: 20pt;
-    }
-
-    .minorTextB {
-        font-size: 11pt;
-    }
+  .minorTextB {
+    font-size: 11pt;
+  }
 }
 
 @media (max-width: 450px) {
-    .title {
-        width: 99%;
-        flex-direction: column;
-    }
+  .title {
+    width: 99%;
+    flex-direction: column;
+  }
 
-    .nbsp {
-        display: none;
-        margin-top: 10px;
-    }
+  .nbsp {
+    display: none;
+    margin-top: 10px;
+  }
 }

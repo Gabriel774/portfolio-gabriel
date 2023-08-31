@@ -21,8 +21,10 @@ import psIcon from "../public/img/ps.png";
 import uamIcon from "../public/img/uam.jpg";
 import etecIcon from "../public/img/T.png";
 import udemyIcon from "../public/img/udemy.png";
+import traderLogo from "../public/img/trader-logo.png";
 import nodeIcon from "../public/img/nodejs-logo-FBE122E377-seeklogo.com.png";
 import laravelIcon from "../public/img/laravel.jpeg";
+import Image from "next/image";
 
 export const projects = [
   {
@@ -48,6 +50,22 @@ export const projects = [
         trabalhava na SignoWeb. O foco do site é a venda de cursos de inglês.
         Possui um blog de notícias e todo o conteúdo do site é gerenciável por
         um sistema interno.
+      </p>
+    ),
+  },
+  {
+    name: (
+      <span style={{ width: 120, height: 85, marginTop: 5, marginBottom: 15 }}>
+        <Image src={traderLogo} width={120} height={85} alt="Trader" />
+      </span>
+    ),
+    link: "https://trader-project.vercel.app/register",
+    color: "rgb(46, 46, 46)",
+    desc: (
+      <p className={styles.cardDesc} style={{ color: "white" }}>
+        Trader é uma simulação de um site de day trade, este é um projeto full
+        stack, cujo a ideia vem de uma reimaginação de um desafio do curso da
+        COD3R de VueJS
       </p>
     ),
   },
@@ -183,7 +201,7 @@ export const courses = [
     icon: uamIcon,
     alt: "Ícone Universidade Anhembi Morumbi (UAM)",
     color: "#007C6B",
-    link: "https://portal.anhembi.br/graduacao/cursos/tecnologia-em-analise-e-desenvolvimento-de-sistemas/#sobre",
+    link: "https://portal.anhembi.br/graduacao/analise-e-desenvolvimento-de-sistemas/",
   },
   {
     name: "Curso Técnico - Desenvolvimento de Sistemas",
@@ -355,7 +373,7 @@ export const contactLink = [
   },
   {
     name: "Curriculum Vitae",
-    link: "https://drive.google.com/file/d/1udRBYvSrCBZ03db3QGh-3D0R1VXLBqkH/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1MTn3azxuNUpQ7issfGpKa95ommQPgyUz/view?usp=sharing",
     color: contactStyles.btnpurple,
   },
   {

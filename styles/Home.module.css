@@ -59,7 +59,8 @@
 
 .desc {
   font-size: 20pt;
-  margin: 10px 15px;
+  margin: 10px auto;
+  max-width: 900px;
   transition: opacity 0.5s;
 }
 
