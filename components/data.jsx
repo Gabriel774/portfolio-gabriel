@@ -268,7 +268,7 @@ export const icons = [
   },
   {
     src: linkedinIcon,
-    link: "https://bit.ly/gabriel-santos-linkedin",
+    link: "https://linkedin.com/in/gabriel-santos-developer",
     alt: "Acessar Linkedin",
   },
   {
@@ -368,7 +368,7 @@ export const skillsData = [
 export const contactLink = [
   {
     name: "LinkedIn",
-    link: "https://bit.ly/gabriel-santos-linkedin",
+    link: "https://linkedin.com/in/gabriel-santos-developer",
     color: "",
   },
   {
