@@ -14,7 +14,7 @@ export default function Contact() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        Contato <span className={styles.nbsp}>&nbsp;</span>
+        Contact <span className={styles.nbsp}>&nbsp;</span>
         <Image height={45} width={45} src={contactIcon} alt="Ícone Contato" />
       </motion.h1>
       <div className={styles.desc}>

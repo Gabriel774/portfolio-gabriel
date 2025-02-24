@@ -37,8 +37,8 @@ export default function Projects() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        Projetos <span className={styles.nbsp}>&nbsp;</span>{" "}
-        <Image height={45} width={45} alt="Ícone Projetos" src={codeIcon} />
+        Experience <span className={styles.nbsp}>&nbsp;</span>{" "}
+        <Image height={45} width={45} alt="Experience Icon" src={codeIcon} />
       </motion.h1>
       <div className={styles.projectsDescContainer}>
         <motion.h2

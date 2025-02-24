@@ -44,7 +44,7 @@ export default function Education() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        Formações <span className={styles.nbsp}>&nbsp;</span>
+        Education <span className={styles.nbsp}>&nbsp;</span>
         <Image width={45} height={45} src={educationIcon} alt="Ícone Capelo" />
       </motion.h1>
       <div className={styles.desc}>

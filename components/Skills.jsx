@@ -38,7 +38,7 @@ export default function skills() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        Tecnologias <span className={styles.nbsp}>&nbsp;</span>{" "}
+        Technologies <span className={styles.nbsp}>&nbsp;</span>{" "}
         <Image
           height={45}
           width={45}

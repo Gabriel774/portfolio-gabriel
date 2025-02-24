@@ -77,8 +77,8 @@ export default function NavMobile() {
               document.querySelector("html").style.overflowY = "scroll";
             }}
           >
-            <Image src={returnArrow} alt={"Voltar"} width={35} height={35} />
-            <h3 className={styles.menuLinkTitle}>Voltar</h3>
+            <Image src={returnArrow} alt={"Go back"} width={35} height={35} />
+            <h3 className={styles.menuLinkTitle}>Go back</h3>
           </motion.div>
         </motion.div>
       </motion.div>
