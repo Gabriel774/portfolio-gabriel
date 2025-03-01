@@ -47,28 +47,28 @@ export default function Projects() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Abaixo você pode conferir alguns dos projetos que já fiz (clique para
-          acessá-los), inclui meus projetos pessoais e profissionais. Já
-          trabalhei nos mais diversos projetos incluindo APIs, Web sites e
-          aplicações mobile. Confira também o meu{" "}
-          <a
-            style={{ textDecoration: "underline", color: "rgb(70, 70, 192)" }}
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/gabriel774"
-          >
-            GitHub
-          </a>
-          .
+          Below are some of my full-time roles so far.
+          I am 𝗰𝗼𝗺𝗺𝗶𝘁𝘁𝗲𝗱 𝘁𝗼 𝗮𝗱𝗱𝗶𝗻𝗴 𝘃𝗮𝗹𝘂𝗲 𝘁𝗼 𝗲𝘃𝗲𝗿𝘆 𝗽𝗿𝗼𝗱𝘂𝗰𝘁 𝗜 𝘄𝗼𝗿𝗸 on by writing clean, maintainable code,
+          implementing tests, and refactoring legacy code to improve performance and scalability.
         </motion.h2>
         <motion.span
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <Image src={vector} alt="Vetor projetos" className={styles.vector} />
+          <Image src={vector} alt="Projects" className={styles.vector} />
         </motion.span>
       </div>
+
+      <motion.h1
+        className={styles.sectionTitle}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        Personal Projects
+      </motion.h1>
+
       <motion.div className={styles.container}>
         {projects.map((project, i) => {
           return (

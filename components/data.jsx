@@ -14,10 +14,8 @@ import reactIcon from "../public/img/logo-react-icon.png";
 import vueIcon from "../public/img/vue-logo.png";
 import htmlIcon from "../public/img/html.png";
 import phpIcon from "../public/img/php.png";
-import illustratorIcon from "../public/img/ai.png";
 import tsIcon from "../public/img/ts.png";
 import sqlIcon from "../public/img/sql.png";
-import psIcon from "../public/img/ps.png";
 import uamIcon from "../public/img/uam.jpg";
 import etecIcon from "../public/img/T.png";
 import udemyIcon from "../public/img/udemy.png";
@@ -29,32 +27,6 @@ import Image from "next/image";
 export const projects = [
   {
     name: (
-      <h1
-        className={styles.cardTitle}
-        style={{
-          fontFamily: "Oswald",
-          color: "white",
-          fontWeight: "400",
-          marginTop: "10px",
-          marginBottom: "22px",
-        }}
-      >
-        Winner Idiomas
-      </h1>
-    ),
-    link: "https://www.winneridiomas.com.br/",
-    color: "#19462c",
-    desc: (
-      <p className={styles.cardDesc} style={{ color: "white" }}>
-        Winner Idiomas é um projeto profissional desenvolvido enquanto
-        trabalhava na SignoWeb. O foco do site é a venda de cursos de inglês.
-        Possui um blog de notícias e todo o conteúdo do site é gerenciável por
-        um sistema interno.
-      </p>
-    ),
-  },
-  {
-    name: (
       <span style={{ width: 120, height: 85, marginTop: 5, marginBottom: 15 }}>
         <Image src={traderLogo} width={120} height={85} alt="Trader" />
       </span>
@@ -63,57 +35,8 @@ export const projects = [
     color: "rgb(46, 46, 46)",
     desc: (
       <p className={styles.cardDesc} style={{ color: "white" }}>
-        Trader é uma simulação de um site de day trade, este é um projeto full
-        stack, cujo a ideia vem de uma reimaginação de um desafio do curso da
-        COD3R de VueJS
-      </p>
-    ),
-  },
-  {
-    name: (
-      <h1
-        className={styles.cardTitle}
-        style={{
-          fontFamily: "Oswald",
-          color: "white",
-          fontWeight: "400",
-          marginTop: "10px",
-        }}
-      >
-        <span style={{ fontFamily: "Oswald", color: "#3498DB" }}>N</span>UNTIUM
-      </h1>
-    ),
-    link: "https://gabriel774.github.io/nuntium",
-    color: "#2b2d42",
-    desc: (
-      <p className={styles.cardDesc} style={{ color: "white" }}>
-        O Nuntium é um projeto original de site um fictício de notícias, foi
-        desenvolvido para treino do framework VueJS, Vue Router (SPA para o Vue)
-        e CSS flex-box.
-      </p>
-    ),
-  },
-  {
-    name: (
-      <h1
-        className={`${styles.cardTitle} ${styles.minorText}`}
-        style={{
-          fontFamily: "Major Mono Display",
-          color: "black",
-          marginTop: "10px",
-          marginTop: "25px",
-          marginBottom: "39px",
-        }}
-      >
-        ProcuraBooks
-      </h1>
-    ),
-    link: "https://gabriel774.github.io/ProcuraBooks",
-    color: "#ff8331",
-    desc: (
-      <p className={styles.cardDesc} style={{ color: "black" }}>
-        ProcuraBooks é um projeto original de um sebo fictício, foi desenvolvido
-        para treinar o desenvolvimento de uma LandingPage com VueJS.
+        Trader is a simulation of a day trading website. This is a full-stack project, inspired by
+        a reimagined version of a challenge from COD3R's Vue.js course.
       </p>
     ),
   },
@@ -130,39 +53,14 @@ export const projects = [
           color: "white",
         }}
       >
-        CALCULADORA<span style={{ color: "rgb(65, 184, 131)" }}>VUE</span>
+        <span style={{ color: "rgb(65, 184, 131)" }}>VUE</span>CALCULATOR
       </h1>
     ),
     link: "https://gabriel774.github.io/calculadora-vue/",
     color: "linear-gradient(90deg,#283e51,#4b79a1)",
     desc: (
       <p className={styles.cardDesc} style={{ color: "white" }}>
-        Uma calculadora totalmente funcional, foi desenvolvida em resposta ao
-        curso de VueJS da COD3R.
-      </p>
-    ),
-  },
-  {
-    name: (
-      <h1
-        className={`${styles.cardTitle} ${styles.minorTextB}`}
-        style={{
-          fontFamily: "'Press Start 2P', cursive",
-          color: "#d8e6f4",
-          marginTop: "10px",
-          marginTop: "40px",
-          marginBottom: "42px",
-        }}
-      >
-        MatadorDeMonstros
-      </h1>
-    ),
-    link: "https://gabriel774.github.io/MatadorDeMonstros/",
-    color: "#30344c",
-    desc: (
-      <p className={styles.cardDesc} style={{ color: "#d8e6f4" }}>
-        Um jogo de turnos no qual seu objetivo é derrotar um monstro, foi
-        desenvolvido em resposta a um desafio do curso da COD3R de VueJS.
+        A fully functional calculator developed in COD3R's Vue.js course.
       </p>
     ),
   },
@@ -178,16 +76,14 @@ export const projects = [
           marginBottom: "42px",
         }}
       >
-        Cronômetro & Timer
+        Stopwatch & Timer
       </h1>
     ),
     link: "https://cronometro-timer.vercel.app",
     color: "RGB(31,31,31)",
     desc: (
       <p className={styles.cardDesc} style={{ color: "#d8e6f4" }}>
-        Projeto de um cronômetro e timer, foi desenvolvido como reimaginação de
-        um projeto antigo meu, adicionando a opção timer e animações, foi
-        desenvolvido em ReactJS
+        A stopwatch and timer project, developed as a reimagining of an old project of mine, adding a timer option and animations. Built with ReactJS.
       </p>
     ),
   },
@@ -195,16 +91,16 @@ export const projects = [
 
 export const courses = [
   {
-    name: "Tecnólogo - Análise e Desenvolvimento de Sistemas",
+    name: "Technologist - Software development",
     institution: "Universidade Anhembi Morumbi (UAM)",
-    date: "Fevereiro 2022 - Junho 2025",
+    date: "Feb 2022 - Dec 2024",
     icon: uamIcon,
-    alt: "Icon Universidade Anhembi Morumbi (UAM)",
+    alt: "Universidade Anhembi Morumbi (UAM)",
     color: "#007C6B",
     link: "https://portal.anhembi.br/graduacao/analise-e-desenvolvimento-de-sistemas/",
   },
   {
-    name: "Curso Técnico - Desenvolvimento de Sistemas",
+    name: "Technical diploma - Computer software engineering",
     institution: "ETEC Professor Aprígio Gonzaga",
     date: "Fevereiro 2020 - Junho 2021",
     icon: etecIcon,
@@ -213,18 +109,18 @@ export const courses = [
     link: "https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/",
   },
   {
-    name: "Curso ReactJS + Redux",
+    name: "ReactJS COD3R Course",
     institution: "Udemy / Cod3r",
-    date: "Julho 2021 - Setembro 2021",
+    date: "Apr 2021",
     icon: udemyIcon,
     alt: "Icon Udemy",
     color: "#a435f0",
     link: "https://www.udemy.com/certificate/UC-d7737b23-51ef-43ae-a2e7-71338090ecfd/",
   },
   {
-    name: "Curso VueJS (incl. Vue Router & Vuex)",
+    name: "VueJS COD3r Course",
     institution: "Udemy / Cod3r",
-    date: "Fevereiro 2021 - Junho 2021",
+    date: "Dec 2020",
     icon: udemyIcon,
     alt: "Icon Udemy",
     color: "#a435f0",
@@ -287,13 +183,6 @@ export const skillsData = [
     textColor: "#5fd9f9",
   },
   {
-    name: "Laravel",
-    src: laravelIcon,
-    alt: "Icon Laravel",
-    color: "#ef3c2d",
-    textColor: "white",
-  },
-  {
     name: "VueJS",
     src: vueIcon,
     alt: "Icon VueJS",
@@ -301,11 +190,11 @@ export const skillsData = [
     textColor: "#4cb987",
   },
   {
-    name: "NodeJS",
-    src: nodeIcon,
-    alt: "Icon NodeJS",
-    color: "#393939",
-    textColor: "#539e43",
+    name: "JavaScript",
+    src: jsIcon,
+    alt: "Icon JavaScript",
+    color: "#f0dc4e",
+    textColor: "#30362e",
   },
   {
     name: "TypeScript",
@@ -315,18 +204,25 @@ export const skillsData = [
     textColor: "white",
   },
   {
+    name: "NodeJS",
+    src: nodeIcon,
+    alt: "Icon NodeJS",
+    color: "#393939",
+    textColor: "#539e43",
+  },
+  {
+    name: "Laravel",
+    src: laravelIcon,
+    alt: "Icon Laravel",
+    color: "#ef3c2d",
+    textColor: "white",
+  },
+  {
     name: "PHP",
     src: phpIcon,
     alt: "Icon PHP",
     color: "#4d5b92",
     textColor: "white",
-  },
-  {
-    name: "JavaScript",
-    src: jsIcon,
-    alt: "Icon JavaScript",
-    color: "#f0dc4e",
-    textColor: "#30362e",
   },
   {
     name: "MySQL",
@@ -349,36 +245,21 @@ export const skillsData = [
     color: "#f06428",
     textColor: "white",
   },
-  {
-    name: "Illustrator",
-    src: illustratorIcon,
-    alt: "Icon Illustrator",
-    color: "#1b0a02",
-    textColor: "#ff7919",
-  },
-  {
-    name: "Photoshop",
-    src: psIcon,
-    alt: "Icon Photoshop",
-    color: "#292848",
-    textColor: "#23d4fe",
-  },
 ];
 
 export const contactLink = [
   {
     name: "LinkedIn",
+    icon: linkedinIcon,
     link: "https://linkedin.com/in/gabriel-santos-developer",
-    color: "",
-  },
-  {
-    name: "Resume",
-    link: "https://drive.google.com/file/d/1MTn3azxuNUpQ7issfGpKa95ommQPgyUz/view?usp=sharing",
-    color: contactStyles.btnpurple,
   },
   {
     name: "E-mail",
     link: "mailto:gabrielsantossousa774@gmail.com",
-    color: contactStyles.btngreen,
   },
+  {
+    name: "Resume",
+    link: "https://docs.google.com/document/d/1sRwd79RSdqV1FkebShCBLoMQsQf_OeGx/edit?usp=sharing&ouid=101426528786034359214&rtpof=true&sd=true",
+  },
+
 ];

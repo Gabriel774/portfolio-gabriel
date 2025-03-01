@@ -39,57 +39,50 @@
 .buttons {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
 
+.buttonContainer {
+    max-width: 400px;
+    width: 100%;
+}
+
 .button {
     cursor: pointer;
-    width: 500px;
+    width: 100%;
     font-size: 22pt;
-    border: solid 1px dodgerblue;
-    color: dodgerblue;
-    background: transparent;
+    background-color: #30344c;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
     padding: 15px;
     transition: all .2s;
+    user-select: none;
 }
 
 .button:hover {
-    background: dodgerblue;
-    color: #d8e7f5;
+    scale: 1.1;
 }
 
 .button:active {
-    background: rgb(24, 112, 201);
+    scale: .9;
 }
 
 .btngreen {
-    border-color: #2EB086;
-    color: #2EB086;
+    background-color: #2EB086;
 }
 
-.btngreen:hover {
-    background-color: #2EB086;
-    color: #d8e7f5;
-}
 
 .btngreen:active {
     background-color: #218163;
 }
 
 .btnpurple {
-    border-color: #4a4e9c;
-    color: #4a4e9c;
-}
-
-.btnpurple:hover {
     background-color: #4a4e9c;
-    color: #d8e7f5;
 }
 
-.btnpurple:active {
-    background-color: #34376e;
-}
 
 @media (max-width: 800px) {
     .contact {
