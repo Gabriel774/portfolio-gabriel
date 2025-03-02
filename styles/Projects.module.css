@@ -35,6 +35,7 @@
   width: 100%;
   max-width: 500px;
   scale: .8;
+  margin-bottom: 50px;
 }
 
 .subTitle {
@@ -60,6 +61,13 @@
   }
 }
 
+.jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px 20px;
+}
+
 .card {
   height: 100px;
   overflow: hidden;
@@ -73,6 +81,49 @@
   left: 5px;
   margin: auto;
   cursor: pointer;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  background-color: #b5d2ee;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.jobHeader {
+  display: flex;
+  flex-direction: column;
+  background-color: #30344c;
+  padding: 10px 30px;
+  width: 100%;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.jobCompany {
+  font-size: 25px;
+  margin: 0;
+  color: #d8e7f5;
+}
+
+.jobTitle {
+  color: #d8e7f5;
+  margin: 0;
+}
+
+.jobPeriod {
+  color: #d8e7f5;
+  margin: 0;
+}
+
+.jobDescription {
+  padding: 10px 30px;
+  color: #d8e7f5;
 }
 
 .card:hover {

@@ -1,5 +1,4 @@
 import styles from "../styles/Projects.module.css";
-import contactStyles from "../styles/contact.module.css";
 import homeIcon from "../public/img/home.png";
 import codeIcon from "../public/img/coding.png";
 import skillsIcon from "../public/img/habilidades.png";
@@ -102,7 +101,7 @@ export const courses = [
   {
     name: "Technical diploma - Computer software engineering",
     institution: "ETEC Professor Aprígio Gonzaga",
-    date: "Fevereiro 2020 - Junho 2021",
+    date: "Feb 2020 - Jun 2021",
     icon: etecIcon,
     alt: "Icon Etec",
     color: "#19347C",
@@ -250,16 +249,50 @@ export const skillsData = [
 export const contactLink = [
   {
     name: "LinkedIn",
-    icon: linkedinIcon,
+    color: '#0A66C2',
     link: "https://linkedin.com/in/gabriel-santos-developer",
   },
   {
     name: "E-mail",
+    color: '#218163',
     link: "mailto:gabrielsantossousa774@gmail.com",
   },
   {
     name: "Resume",
+    color: '#30344c',
     link: "https://docs.google.com/document/d/1sRwd79RSdqV1FkebShCBLoMQsQf_OeGx/edit?usp=sharing&ouid=101426528786034359214&rtpof=true&sd=true",
   },
 
+];
+
+export const jobs = [
+  {
+    company: 'OtimizeMe',
+    title: 'Full stack engineer',
+    period: 'Oct 2023 - Present',
+    description: <>
+      <p>
+        As a 𝗙𝘂𝗹𝗹-𝗦𝘁𝗮𝗰𝗸 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿, I develop 𝗶𝗻𝗻𝗼𝘃𝗮𝘁𝗶𝘃𝗲 𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻𝘀 for a 𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗘𝗻𝗮𝗯𝗹𝗲𝗿 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺. My work focuses on building scalable,
+        high-performance applications that enhance user experience and platform efficiency.
+      </p>
+
+      <p>
+        💻 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗱 𝗮𝗻𝗱 𝗺𝗮𝗶𝗻𝘁𝗮𝗶𝗻𝗲𝗱 𝗰𝗼𝗿𝗲 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 like the 𝗰𝗵𝗲𝗰𝗸𝗼𝘂𝘁 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗱𝗮𝘀𝗵𝗯𝗼𝗮𝗿𝗱, enabling businesses to manage products,
+        checkouts, upsells, and order bumps, driving customer engagement and acquisition.
+      </p>
+
+      <p>
+        💰 P𝗹𝗮𝘆𝗲𝗱 𝗮 𝗸𝗲𝘆 𝗿𝗼𝗹𝗲 in the creation of the 𝗮𝗳𝗳𝗶𝗹𝗶𝗮𝘁𝗲, 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗿, and 𝗮𝗳𝗳𝗶𝗹𝗶𝗮𝘁𝗶𝗼𝗻 𝗺𝗮𝗻𝗮𝗴𝗲𝗿 𝘀𝘆𝘀𝘁𝗲𝗺𝘀, significantly 𝗲𝘅𝗽𝗮𝗻𝗱𝗶𝗻𝗴 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺
+        𝗰𝗮𝗽𝗮𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 and driving 𝗿𝗲𝘃𝗲𝗻𝘂𝗲 𝗴𝗿𝗼𝘄𝘁𝗵 𝗯𝘆 𝗮𝘁𝘁𝗿𝗮𝗰𝘁𝗶𝗻𝗴 𝗻𝗲𝘄 𝘂𝘀𝗲𝗿𝘀.
+      </p>
+
+      <p>
+        🔧 𝗥𝗲𝗳𝗮𝗰𝘁𝗼𝗿𝗲𝗱 𝗹𝗲𝗴𝗮𝗰𝘆 𝗰𝗼𝗱𝗲, improving application performance, maintainability, and user experience,
+        leading to 𝗵𝗶𝗴𝗵𝗲𝗿 𝗲𝗻𝗴𝗮𝗴𝗲𝗺𝗲𝗻𝘁 and 𝘀𝗺𝗼𝗼𝘁𝗵𝗲𝗿 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝗳𝗼𝗿 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝗮𝗻𝗱 𝗳𝘂𝘁𝘂𝗿𝗲 𝘁𝗲𝗮𝗺 𝗺𝗲𝗺𝗯𝗲𝗿𝘀.
+      </p>
+    </>
+  },
+  {
+    company: 'SignoWeb'
+  }
 ];

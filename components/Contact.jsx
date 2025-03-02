@@ -48,8 +48,7 @@ export default function Contact() {
               rel="noreferrer"
               key={contact.name}
             >
-              <button className={`${styles.button}`}>
-                <Image height={100} width={100} src={contact.icon} alt="icon" />
+              <button style={{background: contact.color}} className={`${styles.button}`}>
                 {contact.name}
               </button>
             </motion.a>

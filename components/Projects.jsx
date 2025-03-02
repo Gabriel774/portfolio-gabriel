@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/Projects.module.css";
-import { projects } from "./data";
+import { projects, jobs } from "./data";
 import vector from "../public/img/Coding-_Flatline.png";
 import codeIcon from "../public/img/coding.png";
 
@@ -28,6 +28,34 @@ export default function Projects() {
       </motion.a>
     );
   };
+
+  const Job = (props) => {
+    return (
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: .9 }}
+        className={styles.job}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <div className={styles.jobHeader}>
+          <h2 className={styles.jobCompany}>
+            {props.job.company} - {props.job.title}
+          </h2>
+
+          <p className={styles.jobPeriod}>
+            {props.job.period}
+          </p>
+        </div>
+
+        <div className={styles.jobDescription}>
+          {props.job.description}
+        </div>
+      </motion.a>
+    );
+  };
+
 
   return (
     <section id="projects" className={styles.projects}>
@@ -59,6 +87,17 @@ export default function Projects() {
           <Image src={vector} alt="Projects" className={styles.vector} />
         </motion.span>
       </div>
+
+      <motion.div className={styles.jobs}>
+        {jobs.map((job) => {
+          return (
+            <Job
+              key={job.company}
+              job={job}
+            />
+          );
+        })}
+      </motion.div>
 
       <motion.h1
         className={styles.sectionTitle}
