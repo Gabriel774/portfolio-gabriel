@@ -44,7 +44,7 @@ export default function Education() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        Formações <span className={styles.nbsp}>&nbsp;</span>
+        Education <span className={styles.nbsp}>&nbsp;</span>
         <Image width={45} height={45} src={educationIcon} alt="Ícone Capelo" />
       </motion.h1>
       <div className={styles.desc}>
@@ -54,9 +54,8 @@ export default function Education() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Aqui você pode conferir as principais formações e cursos que completei
-          ou estou cursando, procuro sempre estudar algo novo e avançar em minha
-          jornada no universo da programação.
+          Here are my key diplomas and courses. I am always striving to grow as a programmer and build increasingly better applications.
+          You can also check some of my recent reads
         </motion.h2>
         <motion.span
           initial={{ opacity: 0 }}

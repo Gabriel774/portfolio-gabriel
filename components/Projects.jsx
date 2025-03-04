@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/Projects.module.css";
-import { projects } from "./data";
+import { projects, jobs } from "./data";
 import vector from "../public/img/Coding-_Flatline.png";
 import codeIcon from "../public/img/coding.png";
 
@@ -29,6 +29,33 @@ export default function Projects() {
     );
   };
 
+  const Job = (props) => {
+    return (
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        className={styles.job}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <div className={styles.jobHeader}>
+          <h2 className={styles.jobCompany}>
+            {props.job.company} • {props.job.title}
+          </h2>
+
+          <p className={styles.jobPeriod}>
+            {props.job.period}
+          </p>
+        </div>
+
+        <div className={styles.jobDescription}>
+          {props.job.description}
+        </div>
+      </motion.a>
+    );
+  };
+
+
   return (
     <section id="projects" className={styles.projects}>
       <motion.h1
@@ -37,8 +64,8 @@ export default function Projects() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        Projetos <span className={styles.nbsp}>&nbsp;</span>{" "}
-        <Image height={45} width={45} alt="Ícone Projetos" src={codeIcon} />
+        Experience <span className={styles.nbsp}>&nbsp;</span>{" "}
+        <Image height={45} width={45} alt="Experience Icon" src={codeIcon} />
       </motion.h1>
       <div className={styles.projectsDescContainer}>
         <motion.h2
@@ -47,28 +74,39 @@ export default function Projects() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Abaixo você pode conferir alguns dos projetos que já fiz (clique para
-          acessá-los), inclui meus projetos pessoais e profissionais. Já
-          trabalhei nos mais diversos projetos incluindo APIs, Web sites e
-          aplicações mobile. Confira também o meu{" "}
-          <a
-            style={{ textDecoration: "underline", color: "rgb(70, 70, 192)" }}
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/gabriel774"
-          >
-            GitHub
-          </a>
-          .
+          Below are some of my full-time roles so far.
+          I am 𝗰𝗼𝗺𝗺𝗶𝘁𝘁𝗲𝗱 𝘁𝗼 𝗮𝗱𝗱𝗶𝗻𝗴 𝘃𝗮𝗹𝘂𝗲 𝘁𝗼 𝗲𝘃𝗲𝗿𝘆 𝗽𝗿𝗼𝗱𝘂𝗰𝘁 𝗜 𝘄𝗼𝗿𝗸 on by writing clean, maintainable code,
+          implementing tests, and refactoring legacy code to improve performance and scalability.
         </motion.h2>
         <motion.span
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <Image src={vector} alt="Vetor projetos" className={styles.vector} />
+          <Image src={vector} alt="Projects" className={styles.vector} />
         </motion.span>
       </div>
+
+      <motion.div className={styles.jobs}>
+        {jobs.map((job) => {
+          return (
+            <Job
+              key={job.company}
+              job={job}
+            />
+          );
+        })}
+      </motion.div>
+
+      <motion.h1
+        className={styles.sectionTitle}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        Personal Projects
+      </motion.h1>
+
       <motion.div className={styles.container}>
         {projects.map((project, i) => {
           return (

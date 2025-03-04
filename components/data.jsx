@@ -1,5 +1,4 @@
 import styles from "../styles/Projects.module.css";
-import contactStyles from "../styles/contact.module.css";
 import homeIcon from "../public/img/home.png";
 import codeIcon from "../public/img/coding.png";
 import skillsIcon from "../public/img/habilidades.png";
@@ -14,10 +13,8 @@ import reactIcon from "../public/img/logo-react-icon.png";
 import vueIcon from "../public/img/vue-logo.png";
 import htmlIcon from "../public/img/html.png";
 import phpIcon from "../public/img/php.png";
-import illustratorIcon from "../public/img/ai.png";
 import tsIcon from "../public/img/ts.png";
 import sqlIcon from "../public/img/sql.png";
-import psIcon from "../public/img/ps.png";
 import uamIcon from "../public/img/uam.jpg";
 import etecIcon from "../public/img/T.png";
 import udemyIcon from "../public/img/udemy.png";
@@ -29,32 +26,6 @@ import Image from "next/image";
 export const projects = [
   {
     name: (
-      <h1
-        className={styles.cardTitle}
-        style={{
-          fontFamily: "Oswald",
-          color: "white",
-          fontWeight: "400",
-          marginTop: "10px",
-          marginBottom: "22px",
-        }}
-      >
-        Winner Idiomas
-      </h1>
-    ),
-    link: "https://www.winneridiomas.com.br/",
-    color: "#19462c",
-    desc: (
-      <p className={styles.cardDesc} style={{ color: "white" }}>
-        Winner Idiomas é um projeto profissional desenvolvido enquanto
-        trabalhava na SignoWeb. O foco do site é a venda de cursos de inglês.
-        Possui um blog de notícias e todo o conteúdo do site é gerenciável por
-        um sistema interno.
-      </p>
-    ),
-  },
-  {
-    name: (
       <span style={{ width: 120, height: 85, marginTop: 5, marginBottom: 15 }}>
         <Image src={traderLogo} width={120} height={85} alt="Trader" />
       </span>
@@ -63,57 +34,8 @@ export const projects = [
     color: "rgb(46, 46, 46)",
     desc: (
       <p className={styles.cardDesc} style={{ color: "white" }}>
-        Trader é uma simulação de um site de day trade, este é um projeto full
-        stack, cujo a ideia vem de uma reimaginação de um desafio do curso da
-        COD3R de VueJS
-      </p>
-    ),
-  },
-  {
-    name: (
-      <h1
-        className={styles.cardTitle}
-        style={{
-          fontFamily: "Oswald",
-          color: "white",
-          fontWeight: "400",
-          marginTop: "10px",
-        }}
-      >
-        <span style={{ fontFamily: "Oswald", color: "#3498DB" }}>N</span>UNTIUM
-      </h1>
-    ),
-    link: "https://gabriel774.github.io/nuntium",
-    color: "#2b2d42",
-    desc: (
-      <p className={styles.cardDesc} style={{ color: "white" }}>
-        O Nuntium é um projeto original de site um fictício de notícias, foi
-        desenvolvido para treino do framework VueJS, Vue Router (SPA para o Vue)
-        e CSS flex-box.
-      </p>
-    ),
-  },
-  {
-    name: (
-      <h1
-        className={`${styles.cardTitle} ${styles.minorText}`}
-        style={{
-          fontFamily: "Major Mono Display",
-          color: "black",
-          marginTop: "10px",
-          marginTop: "25px",
-          marginBottom: "39px",
-        }}
-      >
-        ProcuraBooks
-      </h1>
-    ),
-    link: "https://gabriel774.github.io/ProcuraBooks",
-    color: "#ff8331",
-    desc: (
-      <p className={styles.cardDesc} style={{ color: "black" }}>
-        ProcuraBooks é um projeto original de um sebo fictício, foi desenvolvido
-        para treinar o desenvolvimento de uma LandingPage com VueJS.
+        Trader is a simulation of a day trading website. This is a full-stack project, inspired by
+        a reimagined version of a challenge from the Vue.js course from COD3R.
       </p>
     ),
   },
@@ -130,39 +52,14 @@ export const projects = [
           color: "white",
         }}
       >
-        CALCULADORA<span style={{ color: "rgb(65, 184, 131)" }}>VUE</span>
+        <span style={{ color: "rgb(65, 184, 131)" }}>VUE</span>CALCULATOR
       </h1>
     ),
     link: "https://gabriel774.github.io/calculadora-vue/",
     color: "linear-gradient(90deg,#283e51,#4b79a1)",
     desc: (
       <p className={styles.cardDesc} style={{ color: "white" }}>
-        Uma calculadora totalmente funcional, foi desenvolvida em resposta ao
-        curso de VueJS da COD3R.
-      </p>
-    ),
-  },
-  {
-    name: (
-      <h1
-        className={`${styles.cardTitle} ${styles.minorTextB}`}
-        style={{
-          fontFamily: "'Press Start 2P', cursive",
-          color: "#d8e6f4",
-          marginTop: "10px",
-          marginTop: "40px",
-          marginBottom: "42px",
-        }}
-      >
-        MatadorDeMonstros
-      </h1>
-    ),
-    link: "https://gabriel774.github.io/MatadorDeMonstros/",
-    color: "#30344c",
-    desc: (
-      <p className={styles.cardDesc} style={{ color: "#d8e6f4" }}>
-        Um jogo de turnos no qual seu objetivo é derrotar um monstro, foi
-        desenvolvido em resposta a um desafio do curso da COD3R de VueJS.
+        A fully functional calculator developed in the Vue.js course from COD3R.
       </p>
     ),
   },
@@ -178,16 +75,14 @@ export const projects = [
           marginBottom: "42px",
         }}
       >
-        Cronômetro & Timer
+        Stopwatch & Timer
       </h1>
     ),
     link: "https://cronometro-timer.vercel.app",
     color: "RGB(31,31,31)",
     desc: (
       <p className={styles.cardDesc} style={{ color: "#d8e6f4" }}>
-        Projeto de um cronômetro e timer, foi desenvolvido como reimaginação de
-        um projeto antigo meu, adicionando a opção timer e animações, foi
-        desenvolvido em ReactJS
+        A stopwatch and timer project, developed as a reimagining of an old project of mine, adding a timer option and animations. Built with ReactJS.
       </p>
     ),
   },
@@ -195,66 +90,66 @@ export const projects = [
 
 export const courses = [
   {
-    name: "Tecnólogo - Análise e Desenvolvimento de Sistemas",
+    name: "Technologist - Software development",
     institution: "Universidade Anhembi Morumbi (UAM)",
-    date: "Fevereiro 2022 - Junho 2025",
+    date: "Feb 2022 - Dec 2024",
     icon: uamIcon,
-    alt: "Ícone Universidade Anhembi Morumbi (UAM)",
+    alt: "Universidade Anhembi Morumbi (UAM)",
     color: "#007C6B",
     link: "https://portal.anhembi.br/graduacao/analise-e-desenvolvimento-de-sistemas/",
   },
   {
-    name: "Curso Técnico - Desenvolvimento de Sistemas",
+    name: "Technical diploma - Computer software engineering",
     institution: "ETEC Professor Aprígio Gonzaga",
-    date: "Fevereiro 2020 - Junho 2021",
+    date: "Feb 2020 - Jun 2021",
     icon: etecIcon,
-    alt: "Ícone Etec",
+    alt: "Icon Etec",
     color: "#19347C",
     link: "https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/",
   },
   {
-    name: "Curso ReactJS + Redux",
+    name: "ReactJS COD3R Course",
     institution: "Udemy / Cod3r",
-    date: "Julho 2021 - Setembro 2021",
+    date: "Apr 2021",
     icon: udemyIcon,
-    alt: "Ícone Udemy",
+    alt: "Icon Udemy",
     color: "#a435f0",
     link: "https://www.udemy.com/certificate/UC-d7737b23-51ef-43ae-a2e7-71338090ecfd/",
   },
   {
-    name: "Curso VueJS (incl. Vue Router & Vuex)",
+    name: "VueJS COD3r Course",
     institution: "Udemy / Cod3r",
-    date: "Fevereiro 2021 - Junho 2021",
+    date: "Dec 2020",
     icon: udemyIcon,
-    alt: "Ícone Udemy",
+    alt: "Icon Udemy",
     color: "#a435f0",
     link: "https://www.udemy.com/certificate/UC-4357b2c5-673d-4b48-b73c-a375e0440674/",
   },
 ];
 
 export const links = [
-  { name: "Início", alt: "Ir para o início", src: homeIcon, link: "lp-scroll" },
+  { name: "Home", alt: "Go to home", src: homeIcon, link: "lp-scroll" },
   {
-    name: "Projetos",
-    alt: "Ir para os projetos",
+    name: "Experience",
+    alt: "Go to my experiences",
     src: codeIcon,
     link: "projects-scroll",
   },
   {
-    name: "Formações",
-    alt: "Ir para Formações",
+    name: "Education",
+    alt: "Go to education",
     src: educationIcon,
     link: "education-scroll",
   },
   {
-    name: "Tecnologias",
-    alt: "Ir para tecnologias",
+    name: "Technologies",
+    alt: "Go to Technologies",
     src: skillsIcon,
     link: "skills-scroll",
   },
   {
-    name: "Contato",
-    alt: "Ir para contatos",
+    name: "Contact",
+    alt: "Go to Contact",
     src: contactIcon,
     link: "contact-scroll",
   },
@@ -282,103 +177,140 @@ export const skillsData = [
   {
     name: "ReactJS",
     src: reactIcon,
-    alt: "Ícone React",
+    alt: "Icon React",
     color: "#222222",
     textColor: "#5fd9f9",
   },
   {
-    name: "Laravel",
-    src: laravelIcon,
-    alt: "Ícone Laravel",
-    color: "#ef3c2d",
-    textColor: "white",
-  },
-  {
     name: "VueJS",
     src: vueIcon,
-    alt: "Ícone VueJS",
+    alt: "Icon VueJS",
     color: "#30324d",
     textColor: "#4cb987",
   },
   {
-    name: "NodeJS",
-    src: nodeIcon,
-    alt: "Ícone NodeJS",
-    color: "#393939",
-    textColor: "#539e43",
+    name: "JavaScript",
+    src: jsIcon,
+    alt: "Icon JavaScript",
+    color: "#f0dc4e",
+    textColor: "#30362e",
   },
   {
     name: "TypeScript",
     src: tsIcon,
-    alt: "Ícone TypeScript",
+    alt: "Icon TypeScript",
     color: "#0079cd",
+    textColor: "white",
+  },
+  {
+    name: "NodeJS",
+    src: nodeIcon,
+    alt: "Icon NodeJS",
+    color: "#393939",
+    textColor: "#539e43",
+  },
+  {
+    name: "Laravel",
+    src: laravelIcon,
+    alt: "Icon Laravel",
+    color: "#ef3c2d",
     textColor: "white",
   },
   {
     name: "PHP",
     src: phpIcon,
-    alt: "Ícone PHP",
+    alt: "Icon PHP",
     color: "#4d5b92",
     textColor: "white",
   },
   {
-    name: "JavaScript",
-    src: jsIcon,
-    alt: "Ícone JavaScript",
-    color: "#f0dc4e",
-    textColor: "#30362e",
-  },
-  {
     name: "MySQL",
     src: sqlIcon,
-    alt: "Ícone MySQL",
+    alt: "Icon MySQL",
     color: "#4478a2",
     textColor: "white",
   },
   {
     name: "CSS3",
     src: cssIcon,
-    alt: "Ícone CSS",
+    alt: "Icon CSS",
     color: "#32aadc",
     textColor: "white",
   },
   {
     name: "HTML5",
     src: htmlIcon,
-    alt: "Ícone HTML",
+    alt: "Icon HTML",
     color: "#f06428",
     textColor: "white",
-  },
-  {
-    name: "Illustrator",
-    src: illustratorIcon,
-    alt: "Ícone Illustrator",
-    color: "#1b0a02",
-    textColor: "#ff7919",
-  },
-  {
-    name: "Photoshop",
-    src: psIcon,
-    alt: "Ícone Photoshop",
-    color: "#292848",
-    textColor: "#23d4fe",
   },
 ];
 
 export const contactLink = [
   {
     name: "LinkedIn",
+    color: '#0A66C2',
     link: "https://linkedin.com/in/gabriel-santos-developer",
-    color: "",
-  },
-  {
-    name: "Curriculum Vitae",
-    link: "https://drive.google.com/file/d/1MTn3azxuNUpQ7issfGpKa95ommQPgyUz/view?usp=sharing",
-    color: contactStyles.btnpurple,
   },
   {
     name: "E-mail",
+    color: '#218163',
     link: "mailto:gabrielsantossousa774@gmail.com",
-    color: contactStyles.btngreen,
   },
+  {
+    name: "Resume",
+    color: '#30344c',
+    link: "https://docs.google.com/document/d/1sRwd79RSdqV1FkebShCBLoMQsQf_OeGx/edit?usp=sharing&ouid=101426528786034359214&rtpof=true&sd=true",
+  },
+
+];
+
+export const jobs = [
+  {
+    company: "OtimizeMe",
+    title: "Full stack engineer",
+    period: "Oct 2 023 - Present",
+    description: (<div>
+      <p>
+        As a 𝗙𝘂𝗹𝗹-𝗦𝘁𝗮𝗰𝗸 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿, I develop 𝗶𝗻𝗻𝗼𝘃𝗮𝘁𝗶𝘃𝗲 𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻𝘀 for a 𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗘𝗻𝗮𝗯𝗹𝗲𝗿 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺. My work focuses on building scalable,
+        high-performance applications that enhance user experience and platform efficiency.
+      </p>
+
+      <p>
+        💻 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗱 𝗮𝗻𝗱 𝗺𝗮𝗶𝗻𝘁𝗮𝗶𝗻𝗲𝗱 𝗰𝗼𝗿𝗲 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 like the 𝗰𝗵𝗲𝗰𝗸𝗼𝘂𝘁 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗱𝗮𝘀𝗵𝗯𝗼𝗮𝗿𝗱, enabling businesses to manage products,
+        checkouts, upsells, and order bumps, driving customer engagement and acquisition.
+      </p>
+
+      <p>
+        💰 P𝗹𝗮𝘆𝗲𝗱 𝗮 𝗸𝗲𝘆 𝗿𝗼𝗹𝗲 in the creation of the 𝗮𝗳𝗳𝗶𝗹𝗶𝗮𝘁𝗲, 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗿, and 𝗮𝗳𝗳𝗶𝗹𝗶𝗮𝘁𝗶𝗼𝗻 𝗺𝗮𝗻𝗮𝗴𝗲𝗿 𝘀𝘆𝘀𝘁𝗲𝗺𝘀, significantly 𝗲𝘅𝗽𝗮𝗻𝗱𝗶𝗻𝗴 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺
+        𝗰𝗮𝗽𝗮𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 and driving 𝗿𝗲𝘃𝗲𝗻𝘂𝗲 𝗴𝗿𝗼𝘄𝘁𝗵 𝗯𝘆 𝗮𝘁𝘁𝗿𝗮𝗰𝘁𝗶𝗻𝗴 𝗻𝗲𝘄 𝘂𝘀𝗲𝗿𝘀.
+      </p>
+
+      <p>
+        🔧 𝗥𝗲𝗳𝗮𝗰𝘁𝗼𝗿𝗲𝗱 𝗹𝗲𝗴𝗮𝗰𝘆 𝗰𝗼𝗱𝗲, improving application performance, maintainability, and user experience,
+        leading to 𝗵𝗶𝗴𝗵𝗲𝗿 𝗲𝗻𝗴𝗮𝗴𝗲𝗺𝗲𝗻𝘁 and 𝘀𝗺𝗼𝗼𝘁𝗵𝗲𝗿 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝗳𝗼𝗿 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝗮𝗻𝗱 𝗳𝘂𝘁𝘂𝗿𝗲 𝘁𝗲𝗮𝗺 𝗺𝗲𝗺𝗯𝗲𝗿𝘀.
+      </p>
+    </div>)
+  },
+  {
+    company: "SignoWeb",
+    title: "Full stack engineer",
+    period: "Apr 2022 - May 2023",
+    description: (<div>
+      <p>
+        Developed and maintained 𝘄𝗲𝗯 𝗮𝗻𝗱 𝗺𝗼𝗯𝗶𝗹𝗲 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 𝗳𝗼𝗿 𝗱𝗶𝘃𝗲𝗿𝘀𝗲 𝗶𝗻𝗱𝘂𝘀𝘁𝗿𝗶𝗲𝘀, focusing on performance, scalability,
+        and seamless user experiences. Worked with 𝗥𝗲𝗮𝗰𝘁𝗝𝗦, 𝗥𝗲𝗮𝗰𝘁 𝗡𝗮𝘁𝗶𝘃𝗲, 𝗣𝗛𝗣, and 𝗟𝗮𝗿𝗮𝘃𝗲𝗹, integrating third-party services
+        to enhance functionality. Mentored junior developers, fostering best practices in development.
+      </p>
+
+      <p>
+        🧹 𝗨𝗯𝗲𝗿-𝗹𝗶𝗸𝗲 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺 𝗳𝗼𝗿 𝗱𝗼𝗺𝗲𝘀𝘁𝗶𝗰 𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 – Led 𝗯𝗮𝗰𝗸-𝗲𝗻𝗱 𝗮𝗻𝗱 𝗺𝗼𝗯𝗶𝗹𝗲 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁, implementing 𝗹𝗼𝗰𝗮𝘁𝗶𝗼𝗻-𝗯𝗮𝘀𝗲𝗱 𝘀𝗲𝗿𝘃𝗶𝗰𝗲 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗶𝗹𝗶𝘁𝘆,
+        𝘂𝘀𝗲𝗿 𝗿𝗮𝘁𝗶𝗻𝗴𝘀 𝗮𝗻𝗱 𝗿𝗲𝘃𝗶𝗲𝘄𝘀, and dedicated versions for service owners and providers.
+      </p>
+
+      <p>
+        🗣️ 𝗙𝗼𝗿𝗲𝗶𝗴𝗻 𝗹𝗮𝗻𝗴𝘂𝗮𝗴𝗲 𝗰𝗼𝘂𝗿𝘀𝗲 𝘄𝗲𝗯𝘀𝗶𝘁𝗲 – Developed an educational platform featuring 𝗖𝗮𝗺𝗯𝗿𝗶𝗱𝗴𝗲 𝗘𝗻𝗴𝗹𝗶𝘀𝗵 𝗰𝗲𝗿𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 and interactive learning resources.
+      </p>
+    </div>)
+  }
 ];

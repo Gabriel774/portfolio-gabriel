@@ -38,7 +38,7 @@ export default function skills() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        Tecnologias <span className={styles.nbsp}>&nbsp;</span>{" "}
+        Technologies <span className={styles.nbsp}>&nbsp;</span>{" "}
         <Image
           height={45}
           width={45}
@@ -53,9 +53,9 @@ export default function skills() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Abaixo você pode conferir as Tecnologias e Ferramentas com as quais eu
-          trabalho. Diariamente estou empenhado em aprender coisas novas e
-          evoluir, para assim desenvolver aplicações cada vez melhores.
+          Here, you can find my current development stack. My primary focus is the JavaScript ecosystem, which I specialize in.
+          I have experience working across front-end, back-end, and mobile development,
+          consistently delivering high-quality results—whether through a beautifully crafted UI or a robust, scalable API.
         </motion.h2>
         <motion.span
           initial={{ opacity: 0 }}

@@ -14,7 +14,7 @@ export default function Contact() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        Contato <span className={styles.nbsp}>&nbsp;</span>
+        Contact <span className={styles.nbsp}>&nbsp;</span>
         <Image height={45} width={45} src={contactIcon} alt="Ícone Contato" />
       </motion.h1>
       <div className={styles.desc}>
@@ -24,9 +24,7 @@ export default function Contact() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Caso queira entrar em contato comigo, é só me chamar em alguns dos
-          meios abaixo e vou responder o mais rápido possível. Abaixo também é
-          possível fazer o download do meu Curriculum Vitae.
+          Let’s chat! Feel free to reach out through any of the contacts below, and you can also download my resume.
         </motion.h2>
 
         <motion.span
@@ -42,7 +40,7 @@ export default function Contact() {
           return (
             <motion.a
               href={contact.link}
-              style={{ margin: "15px", padding: "0", width: "100%" }}
+              className={styles.buttonContainer}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -50,7 +48,7 @@ export default function Contact() {
               rel="noreferrer"
               key={contact.name}
             >
-              <button className={`${styles.button} ${contact.color}`}>
+              <button style={{background: contact.color}} className={`${styles.button}`}>
                 {contact.name}
               </button>
             </motion.a>

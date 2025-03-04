@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Gabriel Santos - Portfólio</title>
+        <title>Gabriel Santos - Portfolio</title>
         <meta name="description" content="Meu Portfólio de desenvolvedor" />
         <meta name="theme-color" content="#30344c" />
         <link

@@ -30,7 +30,7 @@ export default function landingPage() {
         />
         <div style={{ minHeight: "150px" }}>
           <h1 className={styles.title}>Gabriel Santos</h1>
-          <h3 className={styles.subtitle}>Desenvolvedor Full Stack</h3>
+          <h3 className={styles.subtitle}>Full Stack Developer</h3>
         </div>
         <div className={styles.iconsContainer}>
           {icons.map((icon, i) => (
@@ -39,10 +39,10 @@ export default function landingPage() {
         </div>
         <div></div>
         <h4 className={styles.desc}>
-          Sou Desenvolvedor Full Stack com 2 anos de experiência na área, já
-          trabalhei em projetos como APIs, websites e aplicativos. Sempre
-          presando por surpreender, busco evoluir sempre para construir
-          aplicações cada vez melhores.
+          I’m a 𝗺𝗶𝗱-𝗹𝗲𝘃𝗲𝗹 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 with 𝟯 𝘆𝗲𝗮𝗿𝘀 𝗼𝗳 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲 designing and building scalable,
+          high-performance applications for both web and mobile platforms.
+          I specialize in full-stack development, crafting engaging user
+          interfaces and robust back-end systems that drive business success.
         </h4>
       </div>
       <div
