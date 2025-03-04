@@ -61,7 +61,7 @@
     grid-template-columns: 1fr;
   }
 }
-1
+
 .jobs {
   display: flex;
   flex-direction: column;
