@@ -293,6 +293,24 @@ export const jobs = [
     </>
   },
   {
-    company: 'SignoWeb'
+    company: 'SignoWeb',
+    title: 'Full stack engineer',
+    period: 'Apr 2022 - May 2023',
+    description: <>
+      <p>
+        Developed and maintained 𝘄𝗲𝗯 𝗮𝗻𝗱 𝗺𝗼𝗯𝗶𝗹𝗲 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 𝗳𝗼𝗿 𝗱𝗶𝘃𝗲𝗿𝘀𝗲 𝗶𝗻𝗱𝘂𝘀𝘁𝗿𝗶𝗲𝘀, focusing on performance, scalability,
+        and seamless user experiences. Worked with 𝗥𝗲𝗮𝗰𝘁𝗝𝗦, 𝗥𝗲𝗮𝗰𝘁 𝗡𝗮𝘁𝗶𝘃𝗲, 𝗣𝗛𝗣, and 𝗟𝗮𝗿𝗮𝘃𝗲𝗹, integrating third-party services
+        to enhance functionality. Mentored junior developers, fostering best practices in development.
+      </p>
+
+      <p>
+        🧹 𝗨𝗯𝗲𝗿-𝗹𝗶𝗸𝗲 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺 𝗳𝗼𝗿 𝗱𝗼𝗺𝗲𝘀𝘁𝗶𝗰 𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 – Led 𝗯𝗮𝗰𝗸-𝗲𝗻𝗱 𝗮𝗻𝗱 𝗺𝗼𝗯𝗶𝗹𝗲 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁, implementing 𝗹𝗼𝗰𝗮𝘁𝗶𝗼𝗻-𝗯𝗮𝘀𝗲𝗱 𝘀𝗲𝗿𝘃𝗶𝗰𝗲 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗶𝗹𝗶𝘁𝘆,
+        𝘂𝘀𝗲𝗿 𝗿𝗮𝘁𝗶𝗻𝗴𝘀 𝗮𝗻𝗱 𝗿𝗲𝘃𝗶𝗲𝘄𝘀, and dedicated versions for service owners and providers.
+      </p>
+
+      <p>
+        🗣️ 𝗙𝗼𝗿𝗲𝗶𝗴𝗻 𝗹𝗮𝗻𝗴𝘂𝗮𝗴𝗲 𝗰𝗼𝘂𝗿𝘀𝗲 𝘄𝗲𝗯𝘀𝗶𝘁𝗲 – Developed an educational platform featuring 𝗖𝗮𝗺𝗯𝗿𝗶𝗱𝗴𝗲 𝗘𝗻𝗴𝗹𝗶𝘀𝗵 𝗰𝗲𝗿𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 and interactive learning resources.
+      </p>
+    </>
   }
 ];

@@ -33,7 +33,6 @@ export default function Projects() {
     return (
       <motion.a
         whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: .9 }}
         className={styles.job}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -41,7 +40,7 @@ export default function Projects() {
       >
         <div className={styles.jobHeader}>
           <h2 className={styles.jobCompany}>
-            {props.job.company} - {props.job.title}
+            {props.job.company} • {props.job.title}
           </h2>
 
           <p className={styles.jobPeriod}>
