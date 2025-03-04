@@ -22,6 +22,7 @@ export default function NavMobile() {
         <Image
           width={30}
           height={30}
+          alt="burguer icon"
           src={hamburgerIcon}
           className={styles.hamburgerIcon}
         />
@@ -77,7 +78,7 @@ export default function NavMobile() {
               document.querySelector("html").style.overflowY = "scroll";
             }}
           >
-            <Image src={returnArrow} alt={"Go back"} width={35} height={35} />
+            <Image src={returnArrow} alt="Go back" width={35} height={35} />
             <h3 className={styles.menuLinkTitle}>Go back</h3>
           </motion.div>
         </motion.div>

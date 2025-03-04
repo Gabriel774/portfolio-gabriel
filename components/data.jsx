@@ -35,7 +35,7 @@ export const projects = [
     desc: (
       <p className={styles.cardDesc} style={{ color: "white" }}>
         Trader is a simulation of a day trading website. This is a full-stack project, inspired by
-        a reimagined version of a challenge from COD3R's Vue.js course.
+        a reimagined version of a challenge from the Vue.js course from COD3R.
       </p>
     ),
   },
@@ -59,7 +59,7 @@ export const projects = [
     color: "linear-gradient(90deg,#283e51,#4b79a1)",
     desc: (
       <p className={styles.cardDesc} style={{ color: "white" }}>
-        A fully functional calculator developed in COD3R's Vue.js course.
+        A fully functional calculator developed in the Vue.js course from COD3R.
       </p>
     ),
   },
@@ -267,10 +267,10 @@ export const contactLink = [
 
 export const jobs = [
   {
-    company: 'OtimizeMe',
-    title: 'Full stack engineer',
-    period: 'Oct 2023 - Present',
-    description: <>
+    company: "OtimizeMe",
+    title: "Full stack engineer",
+    period: "Oct 2 023 - Present",
+    description: (<div>
       <p>
         As a 𝗙𝘂𝗹𝗹-𝗦𝘁𝗮𝗰𝗸 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿, I develop 𝗶𝗻𝗻𝗼𝘃𝗮𝘁𝗶𝘃𝗲 𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻𝘀 for a 𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗘𝗻𝗮𝗯𝗹𝗲𝗿 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺. My work focuses on building scalable,
         high-performance applications that enhance user experience and platform efficiency.
@@ -290,13 +290,13 @@ export const jobs = [
         🔧 𝗥𝗲𝗳𝗮𝗰𝘁𝗼𝗿𝗲𝗱 𝗹𝗲𝗴𝗮𝗰𝘆 𝗰𝗼𝗱𝗲, improving application performance, maintainability, and user experience,
         leading to 𝗵𝗶𝗴𝗵𝗲𝗿 𝗲𝗻𝗴𝗮𝗴𝗲𝗺𝗲𝗻𝘁 and 𝘀𝗺𝗼𝗼𝘁𝗵𝗲𝗿 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝗳𝗼𝗿 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝗮𝗻𝗱 𝗳𝘂𝘁𝘂𝗿𝗲 𝘁𝗲𝗮𝗺 𝗺𝗲𝗺𝗯𝗲𝗿𝘀.
       </p>
-    </>
+    </div>)
   },
   {
-    company: 'SignoWeb',
-    title: 'Full stack engineer',
-    period: 'Apr 2022 - May 2023',
-    description: <>
+    company: "SignoWeb",
+    title: "Full stack engineer",
+    period: "Apr 2022 - May 2023",
+    description: (<div>
       <p>
         Developed and maintained 𝘄𝗲𝗯 𝗮𝗻𝗱 𝗺𝗼𝗯𝗶𝗹𝗲 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 𝗳𝗼𝗿 𝗱𝗶𝘃𝗲𝗿𝘀𝗲 𝗶𝗻𝗱𝘂𝘀𝘁𝗿𝗶𝗲𝘀, focusing on performance, scalability,
         and seamless user experiences. Worked with 𝗥𝗲𝗮𝗰𝘁𝗝𝗦, 𝗥𝗲𝗮𝗰𝘁 𝗡𝗮𝘁𝗶𝘃𝗲, 𝗣𝗛𝗣, and 𝗟𝗮𝗿𝗮𝘃𝗲𝗹, integrating third-party services
@@ -311,6 +311,6 @@ export const jobs = [
       <p>
         🗣️ 𝗙𝗼𝗿𝗲𝗶𝗴𝗻 𝗹𝗮𝗻𝗴𝘂𝗮𝗴𝗲 𝗰𝗼𝘂𝗿𝘀𝗲 𝘄𝗲𝗯𝘀𝗶𝘁𝗲 – Developed an educational platform featuring 𝗖𝗮𝗺𝗯𝗿𝗶𝗱𝗴𝗲 𝗘𝗻𝗴𝗹𝗶𝘀𝗵 𝗰𝗲𝗿𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 and interactive learning resources.
       </p>
-    </>
+    </div>)
   }
 ];
