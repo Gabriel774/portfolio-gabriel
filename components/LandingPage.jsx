@@ -39,7 +39,7 @@ export default function landingPage() {
         </div>
         <div></div>
         <h4 className={styles.desc}>
-          I’m a 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 with 𝟯 𝘆𝗲𝗮𝗿𝘀 𝗼𝗳 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲 designing and building scalable,
+          I’m a 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 with 4 𝘆𝗲𝗮𝗿𝘀 𝗼𝗳 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲 designing and building scalable,
           high-performance applications for both web and mobile platforms.
           I specialize in full-stack development, crafting engaging user
           interfaces and robust back-end systems that drive business success.
